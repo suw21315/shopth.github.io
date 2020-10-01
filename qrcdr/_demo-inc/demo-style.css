@@ -1,0 +1,113 @@
+/* ------- ADDITIONAL STYLES ------ */
+
+.ads-slot{
+    text-align: center;
+    width: 100%;
+    clear: both;
+    padding: 20px 0;
+}
+.ads-slot img{
+    max-width: 100%;
+    height: auto;
+}
+.nopadding{
+	padding: 0;
+}
+.style-select{
+    left: -250px;
+    top: 120px;
+    z-index: 999;
+    position: fixed;
+    width: 250px;
+    webkit-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+
+.stalabel{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 12px 16px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    -webkit-border-radius: 0 4px 4px 0;
+    border-radius: 0 4px 4px 0;
+    width: 48px;
+    right: -48px;
+    webkit-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    background: #fff;
+    color: #333;
+    opacity: 0.6;
+}
+.stalabel:hover,
+.style-select.aperto .stalabel{
+    opacity: 1;
+}
+.style-select.aperto{
+    left: 0;
+    box-shadow: 0 0px 20px rgba(0,0,0,0.19), 0 4px 6px rgba(0,0,0,0.23);
+}
+
+.stylepanel .btn{
+    background: #333;
+    color: #fff;
+}
+/*.stylepanel .btn:hover{
+    background: #65aed0;
+    color: #fff;
+}*/
+
+.stylepanel{
+    width: 250px;
+    background: #fff;
+    color: #333;
+    padding: 15px;
+    float: left;
+    position: relative;
+    display: block;
+ }
+.style-select.aperto .stylepanel,
+.style-select.aperto .stalabel{
+    background: #fff;
+}
+.stalabel .fa{
+	font-size: 18px;
+	float: left;
+}
+.style-select .input-group-addon{
+	background-color: #2a2a2a;
+	border-color: #323232;
+	color: #d9d9d9;
+}
+.demo-signin .badge {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width:767px){
+	.features, .instructions{
+		margin-top: 10px;
+	}
+	.features ul li{
+		float: left;
+		clear: both;
+		list-style:none;
+		line-height: 2em;
+		margin: 3px 0;
+	}
+	.vfm-biglogo{
+		font-size: 80px;
+		width: 50%;
+	}
+}
+.instructions{
+    margin-top: 20px;
+}
+.instructions p{
+     margin-bottom: 10px;
+}

@@ -1,0 +1,124 @@
+/*
+ * A colorselector for Twitter Bootstrap which lets you select a color from a predefined set of colors only.
+ * https://github.com/flaute/bootstrap-colorselector
+ *
+ * Copyright (C) 2014 Flaute
+ *
+ * Licensed under the MIT license
+ */
+
+/* colorselector dropdown */
+.dropdown-colorselector{
+  float: left;
+  clear: both;
+  margin-bottom: 20px;
+}
+.dropdown-colorselector>.dropdown-stoca {
+  float: left;
+  clear: both;
+  width: 100%;
+  background: rgba(255,255,255,0.9);
+  margin: 0;
+  padding: 0;
+  display: block;
+  padding: 6px;
+}
+
+/*
+.dropdown-colorselector>.dropdown-stoca.pull-right {
+  right: -7px;
+  left: auto;
+}
+*/
+.dropdown-colorselector > .dropdown-stoca > li {
+  display: block;
+  float: left;
+  width: 26px;
+  height: 26px;
+  margin: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-colorselector > .dropdown-stoca > li > .color-btn {
+  display: block;
+  width: 26px;
+  height: 26px;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  position: relative;
+  -webkit-transition: all ease 0.1s;
+  transition: all ease 0.1s;
+  border: none;
+
+  border-top: 6px solid transparent;
+  border-bottom: 8px solid transparent;
+
+
+}
+/*
+.dropdown-colorselector > .dropdown-stoca > li > .color-btn:after {
+    position:absolute; 
+    right:0; 
+    bottom:-2px; content:'';
+    border-bottom: 10px solid #333;
+    border-right: 10px solid transparent;
+}*/
+
+
+.dropdown-colorselector > .dropdown-stoca > li > .color-btn:hover {
+  text-decoration: none;
+  opacity: 0.8;
+  filter: alpha(opacity = 80);
+  -webkit-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  transform: scale(1.08);
+}
+
+/*.dropdown-colorselector > .dropdown-stoca > li > .color-btn.selected:after {
+  content: "\e013";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  line-height: 20px;
+}*/
+
+.dropdown-colorselector > .dropdown-stoca > li > .color-btn.selected{
+ -webkit-box-shadow: 0 0 0 1px #333;
+  box-shadow: 0 0 0 1px #333;
+}
+.btn-colorselector {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #DDD;
+  vertical-align: middle;
+  border-radius: 0;
+}
+
+.dropdown-stoca.dropdown-caret:before {
+  border-bottom: 7px solid rgba(0, 0, 0, 0.2);
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  content: "";
+  display: inline-block;
+  left: 9px;
+  position: absolute;
+  top: -7px;
+}
+
+.dropdown-stoca.dropdown-caret:after {
+  border-bottom: 6px solid #FFFFFF;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  content: "";
+  display: inline-block;
+  left: 10px;
+  position: absolute;
+  top: -6px;
+}
