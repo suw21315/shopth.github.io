@@ -1,124 +1,104 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>FaceClone</title>
 
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+<!DOCTYPE html>
+<html lang="th" dir=ltr>
+
+<head>
+  <title>GCMS Ajax CMS</title>
+  <meta charset=utf-8>
+  <meta name=viewport content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="http://itshopth.mooo.com/wat/favicon.ico">
+  <link rel=stylesheet href="http://itshopth.mooo.com/wat/index.php/css/view/index">
+  <script src="http://itshopth.mooo.com/wat/index.php/js/view/index"></script>
+</head>
+    <link rel="stylesheet" href="http://itshopth.mooo.com/wat/skin/pitnik/css/main.min.css">
+	<link rel="stylesheet" href="http://itshopth.mooo.com/wat/skin/pitnik/css/weather-icons.min.css">
+	<link rel="stylesheet" href="http://itshopth.mooo.com/wat/skin/pitnik/css/toast-notification.css">
+	<link rel="stylesheet" href="http://itshopth.mooo.com/wat/skin/pitnik/css/page-tour.css">
+    <link rel="stylesheet" href="http://itshopth.mooo.com/wat/skin/pitnik/css/style.css">
+    <link rel="stylesheet" href="http://itshopth.mooo.com/wat/skin/pitnik/css/color.css">
+    <link rel="stylesheet" href="http://itshopth.mooo.com/wat/skin/pitnik/css/responsive.css">
+<script src="http://itshopth.mooo.com/wat/ckeditor/ckeditor.js"></script>
+<link rel="alternate" type="application/rss+xml" title="บทความ แหล่งเรียนรู้ :: Knowledge" href="http://itshopth.mooo.com/wat/knowledge.rss">
+<link rel="alternate" type="application/rss+xml" title="ข่าวสารจากเว็บไซต์" href="http://itshopth.mooo.com/wat/news.rss">
+<meta name="generator" content="GCMS AJAX CMS design by https://gcms.in.th">
+<meta property="og:title" content="GCMS Ajax CMS">
+<meta name="description" content="หน้าแรกของ GCMS, ข้อตกลงการใช้งาน">
+<meta property="og:description" content="หน้าแรกของ GCMS, ข้อตกลงการใช้งาน">
+<meta name="keywords" content="GCMS Ajax CMS">
+<meta property="og:site_name" content="ชุมชนคนทำเว็บ">
+<meta property="og:type" content="article">
+<link rel="shortcut icon" href="http://itshopth.mooo.com/wat/favicon.ico" type="image/x-icon">
+<link rel="icon" href="http://itshopth.mooo.com/wat/favicon.ico" type="image/x-icon">
+<link rel="image_src" href="http://itshopth.mooo.com/wat/datas/image/logo.png">
+<meta property="og:image" content="http://itshopth.mooo.com/wat/datas/image/logo.png">
+<meta property="og:image:alt" content="GCMS Ajax CMS">
+<meta name="canonical" content="http://itshopth.mooo.com/wat/index.php">
+<meta property="og:url" content="http://itshopth.mooo.com/wat/index.php">
+<script type="application/ld+json">[{"@context":"http:\/\/schema.org","@type":"WebPage","url":"http:\/\/itshopth.mooo.com\/wat\/index.php","name":"GCMS Ajax CMS","description":"\u0e2b\u0e19\u0e49\u0e32\u0e41\u0e23\u0e01\u0e02\u0e2d\u0e07 GCMS, \u0e02\u0e49\u0e2d\u0e15\u0e01\u0e25\u0e07\u0e01\u0e32\u0e23\u0e43\u0e0a\u0e49\u0e07\u0e32\u0e19","image":[],"breadcrumb":[],"publisher":{"@type":"Organization","name":"\u0e0a\u0e38\u0e21\u0e0a\u0e19\u0e04\u0e19\u0e17\u0e33\u0e40\u0e27\u0e47\u0e1a","description":"\u0e0a\u0e38\u0e21\u0e0a\u0e19\u0e04\u0e19\u0e44\u0e2d\u0e17\u0e35","url":"http:\/\/itshopth.mooo.com\/wat\/index.php","logo":{"@type":"ImageObject","url":"http:\/\/itshopth.mooo.com\/wat\/datas\/image\/logo.png","width":200}}}]</script><script>
+var FIRST_MODULE = "home";
+</script></head>
+
+
 </head>
 <body>
-  <!-- nav -->
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="index.html">FaceClone</a>
-      </div>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="profile.html">Profile</a></li>
-        <li><a href="#">Logout</a></li>
-      </ul>
-    </div>
-  </nav>
-  <!-- ./nav -->
-
-  <!-- main -->
-  <main class="container">
-    <div class="row">
-      <div class="col-md-3">
-        <!-- profile brief -->
-        <div class="panel panel-default">
-          <div class="panel-body">
-            <h4>nicholaskajoh</h4>
-            <p>I love to code!</p>
-          </div>
-        </div>
-        <!-- ./profile brief -->
-
-        <!-- friend requests -->
-        <div class="panel panel-default">
-          <div class="panel-body">
-            <h4>friend requests</h4>
-            <ul>
-              <li>
-                <a href="#">johndoe</a> 
-                <a class="text-success" href="#">[accept]</a> 
-                <a class="text-danger" href="#">[decline]</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <!-- ./friend requests -->
-      </div>
-      <div class="col-md-6">
-        <!-- post form -->
-        <form method="post" action="">
-          <div class="input-group">
-            <input class="form-control" type="text" name="content" placeholder="Make a post...">
-            <span class="input-group-btn">
-              <button class="btn btn-success" type="submit" name="post">Post</button>
-            </span>
-          </div>
-        </form><hr>
-        <!-- ./post form -->
-
-        <!-- feed -->
-        <div>
-          <!-- post -->
-          <div class="panel panel-default">
-            <div class="panel-body">
-              <p>Hello people! This is my first FaceClone post. Hurray!!!</p>
+	<div class="www-layout">
+        <section>
+        	<div class="gap no-gap signin whitish medium-opacity register">
+                <div class="bg-image" style="background-image:url({WEBURL}skin/pitnik/images/resources/theme-bg.jpg)"></div>
+                <div class="container">
+                	<div class="row">
+                        <div class="col-lg-8">
+                            <div class="big-ad">
+                                <figure>  <a id=logo href="{WEBURL}index.php">{LOGO}</a></figure>
+                                <h1>Welcome to the Pitnik</h1>
+                                <p>
+                                     {WIDGET_DOCUMENT module=knowledge;rows=2;cols=2;style=thumbview}                   
+                                </p>
+                                <div class="barcode">
+                                    <figure><img src="{WEBURL}skin/pitnik/images/resources/Barcode.jpg" alt=""></figure>
+                                    <div class="app-download">
+                                        <span>Download Mobile App and Scan QR Code to login</span>
+                                        <ul class="colla-apps">
+                                            <li><a title="" href="https://play.google.com/store?hl=en"><img src="{WEBURL}skin/pitnik/images/android.png" alt="">android</a></li>
+                                            <li><a title="" href="https://www.apple.com/lae/ios/app-store/"><img src="{WEBURL}skin/pitnik/images/apple.png" alt="">iPhone</a></li>
+                                            <li><a title="" href="https://www.microsoft.com/store/apps"><img src="{WEBURL}skin/pitnik/images/windows.png" alt="">Windows</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="we-login-register">
+                                <div class="form-title">
+                                    <i class="fa fa-key"></i>Sign Up
+                                    <span>Sign Up now and meet the awesome friends around the world.</span>
+                                </div>
+                                 <ul id=login-box>{LOGIN}</ul>
+           
+                                <a data-ripple="" title="" href="#" class="with-smedia facebook"><i class="fa fa-facebook"></i></a>
+                                <a data-ripple="" title="" href="#" class="with-smedia twitter"><i class="fa fa-twitter"></i></a>
+								<a data-ripple="" title="" href="#" class="with-smedia instagram"><i class="fa fa-instagram"></i></a>
+								<a data-ripple="" title="" href="#" class="with-smedia google"><i class="fa fa-google-plus"></i></a>
+                                <span>already have an account? <a class="we-account underline" href="#" title="">Sign in</a></span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
             </div>
-            <div class="panel-footer">
-              <span>posted 2017-5-27 20:45:01 by nicholaskajoh</span> 
-              <span class="pull-right"><a class="text-danger" href="#">[delete]</a></span>
-            </div>
-          </div>
-          <!-- ./post -->
-        </div>
-        <!-- ./feed -->
-      </div>
-      <div class="col-md-3">
-      <!-- add friend -->
-        <div class="panel panel-default">
-          <div class="panel-body">
-            <h4>add friend</h4>
-            <ul>
-              <li>
-                <a href="#">alberte</a> 
-                <a href="#">[add]</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <!-- ./add friend -->
-
-        <!-- friends -->
-        <div class="panel panel-default">
-          <div class="panel-body">
-            <h4>friends</h4>
-            <ul>
-              <li>
-                <a href="#">peterpan</a> 
-                <a class="text-danger" href="#">[unfriend]</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <!-- ./friends -->
-      </div>
+        </section>
+         
     </div>
-  </main>
-  <!-- ./main -->
-
-  <!-- footer -->
-  <footer class="container text-center">
-    <ul class="nav nav-pills pull-right">
-      <li>FaceClone - Made by [your name here]</li>
-    </ul>
-  </footer>
-  <!-- ./footer -->
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/script.js"></script>
-</body>
+    
+	<script src="{WEBURL}skin/pitnik/js/main.min.js"></script>
+	<script src="{WEBURL}skin/pitnik/js/jquery-stories.js"></script>
+	<script src="{WEBURL}skin/pitnik/js/toast-notificatons.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script><!-- For timeline slide show -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8c55_YHLvDHGACkQscgbGLtLRdxBDCfI"></script><!-- for location picker map -->
+	<script src="{WEBURL}skin/pitnik/js/locationpicker.jquery.js"></script><!-- for loaction picker map -->
+	<script src="{WEBURL}skin/pitnik/js/map-init.js"></script><!-- map initilasition -->
+	<script src="{WEBURL}skin/pitnik/js/script.js"></script>
+		<script src="{WEBURL}skin/pitnik/js/page-tourintro.js"></script>
+	<script src="{WEBURL}skin/pitnik/js/page-tour-init.js"></script>
+</body>	
 </html>
