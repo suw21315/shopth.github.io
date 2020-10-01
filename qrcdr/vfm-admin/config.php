@@ -3,7 +3,7 @@
  $_CONFIG = array (
   'firstrun' => false,
   'salt' => 'a596fe134dc0ee6ba109426f07adda15',
-  'script_url' => 'http://watsujito.co.th/up/',
+  'script_url' => 'https://shopth.github.io/qrcdr/',
   'session_name' => 'vfm_80591195',
   'admin_color_scheme' => 'purple',
   'align_logo' => 'center',
