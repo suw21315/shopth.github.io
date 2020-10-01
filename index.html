@@ -48,10 +48,17 @@ var FIRST_MODULE = "home";
                 	<div class="row">
                         <div class="col-lg-8">
                             <div class="big-ad">
-                                <figure>  <a id=logo href="{WEBURL}index.php">{LOGO}</a></figure>
+                                <img src="images/logo.png" alt="">
                                 <h1>Welcome to the Pitnik</h1>
                                 <p>
-                                     {WIDGET_DOCUMENT module=knowledge;rows=2;cols=2;style=thumbview}                   
+                                    <div id="main_slide" style="background-color: #000; overflow:hidden;"></div>
+<script>
+var slide = new GBanner('main_slide');
+slide.add('http://school.gcms.in.th/upload/slideshow/1.jpg','Image 1','#');
+slide.add('http://school.gcms.in.th/upload/slideshow/2.jpg','Image 2','#');
+slide.add('http://school.gcms.in.th/upload/slideshow/3.jpg','Image 3','#');
+slide.playSlideShow();
+</script>   
                                 </p>
                                 <div class="barcode">
                                     <figure><img src="images/resources/Barcode.jpg" alt=""></figure>
