@@ -332,7 +332,7 @@ function sendErr() {
 }
 function clickFBLike() {
   document.getElementById("fblikeframe").style.display = 'block';
-  document.getElementById("popupDIV").innerHTML = "<iframe src='/fblike.asp?r=" + Math.random() + "' frameborder='no' style='height:200px;width:250px;'></iframe><br><button onclick='hideFBLike()' class='w3-btn w3-black'>Close</button>";
+  document.getElementById("popupDIV").innerHTML = "<iframe src='/fblike.html?r=" + Math.random() + "' frameborder='no' style='height:200px;width:250px;'></iframe><br><button onclick='hideFBLike()' class='w3-btn w3-black'>Close</button>";
 }
 function hideFBLike() {
   document.getElementById("fblikeframe").style.display = 'none';
