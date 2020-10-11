@@ -28,7 +28,7 @@ $(function () {
     window.location.href.replace(/\/[^/]*$/, '/cors/result.html?%s')
   );
 
-  if (window.location.hostname === 'blueimp.github.io') {
+  if (window.location.hostname === 'shopth.github.io') {
     // Demo settings:
     $('#fileupload').fileupload('option', {
       url: '//jquery-file-upload.appspot.com/',
