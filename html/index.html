@@ -1,773 +1,842 @@
-
-<!DOCTYPE html>
-<html lang="en-US">
-
-<!-- Mirrored from www.w3schools.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Jul 2018 21:21:43 GMT -->
+﻿<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie8" lang="en"><![endif]-->
+<!--[if IE 9 ]><html class="ie9" lang="en"><![endif]-->
+<!--[if (gte IE 10)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" lang="en-US"><!--<![endif]-->
 <head>
-<title>ชุมชนคนทำเว็บ  สอนทำเว็บออนไลน์</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="Keywords" content="HTML,CSS,JavaScript,DOM,jQuery,PHP,SQL,XML,Bootstrap,Web,W3CSS,W3C,tutorials,programming,development,training,learning,quiz,primer,lessons,reference,examples,source code,colors,demos,tips,w3c">
-<link rel="icon" href="favicon.ico" type="image/x-icon">
-<link rel="stylesheet" href="w3css/4/w3.css">
-<script>
-(function() {
-var cx = '012971019331610648934:m2tou3_miwy';
-var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
-gcse.src = '../cse.google.com/cse/cse07b6.html?cx=' + cx;
-var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
-})();
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','../www.google-analytics.com/analytics.js','ga');
-ga('create', 'UA-3855518-1', 'auto');
-ga('require', 'displayfeatures');
-ga('send', 'pageview');
-</script>
-<style>
-/* W3Schools Font Logo */
-.w3schools-logo {
-font-family:fontawesome;
-text-decoration:none;
-line-height: 1;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-font-size:37px;
-letter-spacing:3px;
-color:#555555;
-display:block;
-position:relative;
-}
-.w3schools-logo .dotcom {color:#4CAF50;}
-@font-face {
-font-family:'fontawesome';
-src:url('lib/fonts/fontawesome8deb.eot?14663396#iefix') format('embedded-opentype'),
-url('lib/fonts/fontawesome8deb.woff?14663396') format('woff'),
-url('lib/fonts/fontawesome8deb.ttf?14663396') format('truetype'),
-url('lib/fonts/fontawesome8deb.svg?14663396#fontawesome') format('svg');
-font-style:normal;
-}
-.fa {
-display:inline-block;
-font:normal normal normal 14px/1 FontAwesome;
-font-size:20px;
-text-rendering:auto;
--webkit-font-smoothing:antialiased;
--moz-osx-font-smoothing:grayscale;
-transform:translate(0,0);
-}
-.fa-home:before {content:'\e800';}
-.fa-menu:before {content: '\f0c9';}
-.fa-globe:before {content:'\e801';}
-.fa-search:before {content:'\e802'; }
-.fa-thumbs-o-up:before {content:'\e803';}
-.fa-left-open:before {content:'\e804';}
-.fa-right-open:before {content:'\e805';}
-.fa-caret-down:before {content:'\e809';}
-.fa-caret-up:before {content:'\e80a';}
-/* Google */
-#nav_translate, #nav_search {display:none;}
-#nav_translate a {display:inline;}
-#googleSearch {color:#000000;}
-.searchdiv {
-max-width:400px;
-margin:auto;
-text-align:left;
-font-size:16px;
-}
-div.cse .gsc-control-cse, div.gsc-control-cse {
-background-color:transparent;
-border:none;
-padding:0px;
-margin:0px;
-}
-td.gsc-search-button input.gsc-search-button {background-color:#555555;border-color:#555555;}
-input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus, .gsc-search-button {
-box-sizing:content-box;
-line-height:normal;
-}
-.gsc-tabsArea div {overflow:visible;}
-.gsst_a .gscb_a {margin-top:3px;}
-/* Customize W3.CSS */
-#nav_tutorials,#nav_references,#nav_examples {
-display:none;
-padding-bottom:40px;
-position:absolute;
-width:100%;
-z-index:99 !important;
-}
-.w3-col .w3-button {
-margin:5px 5px 5px 0;
-font-size:16px;
-}
-.w3-col.l4 .w3-card-2 {
-padding:15px 10px;
-height:260px;
-}
-.w3-theme {color:#fff !important;background-color:#4CAF50 !important;}
-.w3-main {margin-left:230px;}
-.w3-sidebar {
-z-index:3;
-width:230px;
-overflow:hidden !important;
-position:absolute !important;
-margin-bottom:-155px;
-}
-.w3-sidebar .w3-bar-block .w3-bar-item{
-padding:0 16px;
-font-size:16px; 
-}
-.w3-bar {
-position:relative;
-z-index:4;
-font-size:17px;
-}
-.w3-wide {
-font-family:"Segoe UI",Arial,sans-serif;
-}
-h1 {
-font-size:80px;
-color:#555555;
-margin:2px 0 -20px 0 !important;
-}
-.certoverlay {
-  position:absolute;
-  top:0;
-  background-color:rgba(0, 0, 0, 0.5);
-  width:100%;
-  text-align:center;
-  padding:15px
-}
-.certoverlay h2 {
-  margin:10px 0 0 0;
-  font-size:36px;
-}
-.certoverlay h3 {
-  margin:0 0 10px 0;
-}
+	<title>iPress - Responsive News/Blog/Magazine HTML5 Template</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<!-- Seo Meta -->
+		<meta name="description" content="iPress - Responsive News/Blog/Magazine HTML5 Template">
+		<meta name="keywords" content="iPress, magazine, light, dark, themeforest, multi purpose, premium, unlimited, blog, news, AD, optimized">
 
-@media screen and (min-width:769px){.w3-sidebar.w3-collapse{display:block !important;}}
-@media screen and (min-width:769px){#myAccordion,.hidesm{display:none !important;}}
-@media screen and (min-width:769px){.w3-main{margin-left:230px !important;}.w3-bar-block .w3-button{padding:0;}}
-@media screen and (max-width:768px){.w3-sidebar.w3-collapse,.barex,.navex{display:none !important;}.w3-bar-block .w3-bar-item{text-align:center !important;padding:2px 0;}h1,.w3-jumbo{font-size:60px !important;}}
-@media screen and (max-width:545px){.certoverlay{padding:10px;height:100%;}.certoverlay h3{font-size:15px;}}
-@media screen and (max-width:380px){.getcert{position:absolute;text-align:center;left:50%;bottom:50%;font-size:13px;}}
-@media only screen and (max-device-width: 1366px){.w3-hide-device{display:none;}}
-</style>
-<!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
+	<!-- Styles -->
+		<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="styles/icons.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="styles/animate.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="styles/responsive.css" media="screen" />
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500' rel='stylesheet' type='text/css'>
+
+	<!-- Favicon -->
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=EmulateIE8; IE=EDGE" />
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 </head>
-<body style="position:relative;min-height:100%;">
+<body>
+	<div id="layout" class="boxed">
+		<header id="header">
+			<div class="a_head">
+				<div class="row clearfix">
+					<div class="breaking_news lefter">
+						<div class="freq_out">
+							<div class="freq"><div class="inner_f"></div><div id="layerBall"></div></div>
+						</div><!-- /freq -->
+						<ul id="js-news" class="js-hidden">
+							<li class="news-item"><a href="#">Improving Search on the Envato Marketplaces: 2013 in Review</a></li>
+							<li class="news-item"><a href="#">4 Ways To Find Free and Unique Photos for Your Next Website Theme</a></li>
+							<li class="news-item"><a href="#">Community Poll: Internet Speeds From Around the World in 2013</a></li>
+							<li class="news-item"><a href="#">New Hub, Header & Collections: 10 Ways to Improve Your Marketplaces Productivity</a></li>
+							<li class="news-item"><a href="#">Get a Free Year of Tuts+ Premium by Trying New Relic</a></li>
+							<li class="news-item"><a href="#">Beyond Bland: 10+ Creative Packaging Designs That Will Leave You Inspired</a></li>
+						</ul><!-- /js news -->
+					</div><!-- /breaking news -->
 
-<div class="w3-row w3-white w3-padding w3-hide-medium w3-hide-small" style="margin-top:5px;">
- <div class="w3-half" style="margin:4px 0 6px 0"><a class='w3schools-logo' href='index.html'>ชุมชนคนทำ<span class='dotcom'>เว็บ</span></a></div>
- <div class="w3-half w3-margin-top w3-wide w3-hide-medium w3-hide-small">
-  <div class="w3-right" style="position:relative;top:5px;">เว็บไซต์สำหรับนักพัฒนาเว็บที่ใหญ่ที่สุดในโลก</div>
- </div>
-</div>
+					<div class="right_bar">
+						<div class="lang">
+							<a class="activated_lang" href="#"><img src="images/flag/us.png" alt="EN"></a>
+							<div class="more_lang">
+								<a href="#"><img src="images/flag/gr.png" alt=""></a>
+								<a href="#"><img src="images/flag/fr.png" alt=""></a>
+							</div><!-- /more lang -->
+						</div><!-- /lang -->
 
-<div class="w3-hide-large w3-hide-large w3-padding-16">
- <div class="w3-center"><a class='w3schools-logo' href='index.html'>ุมชนคนทำ<span class='dotcom'>เว็บ</span></a></div>
- <div class="w3-center w3-wide w3-hide-small" style="margin:14px 0 -5px 0">เว็บไซต์สำหรับนักพัฒนาเว็บที่ใหญ่ที่สุดในโลก</div>
-</div>
+						<div class="social social_head">
+							<a href="#" class="bottomtip" title="Twitter"><i class="fa-twitter"></i></a>
+							<a href="#" class="bottomtip" title="Facebook"><i class="fa-facebook"></i></a>
+							<a href="#" class="bottomtip" title="Google Plus"><i class="fa-google-plus"></i></a>
+							<a href="#" class="bottomtip" title="Linkedin"><i class="fa-linkedin"></i></a>
+							<a href="#" class="bottomtip" title="Github"><i class="fa-github"></i></a>
+							<a href="#" class="bottomtip" title="instagram"><i class="fa-instagram"></i></a>
+							<a href="#" class="bottomtip" title="Dribbble"><i class="fa-dribbble"></i></a>
+						</div><!-- /social -->
 
-<div style='display:none;position:absolute;z-index:6;right:60px;height:57px;padding-top:12px;padding-right:20px;background-color:#4CAF50;' id='googleSearch'><div class='gcse-search'></div></div>
-<div style='display:none;position:absolute;z-index:5;right:120px;height:57px;background-color:#4CAF50;text-align:right;padding-top:15px;' id='google_translate_element'></div>
+						<span id="date_time"></span><!-- /date -->
+					</div><!-- /right bar -->
+				</div><!-- /row -->
+			</div><!-- /a head -->
 
-<div class="w3-bar w3-theme w3-card-2 w3-wide">
- <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 hidesm" href="javascript:void(0)" onclick="w3_open()"><i class='fa'>&#xf0c9;</i></a>
- <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('tutorials')" id="navbtn_tutorials">การสอน <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
- <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('references')" id="navbtn_references">ข้อมูลอ้างอิง <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
- <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_open_nav('examples')" id="navbtn_examples">ตัวอย่าง <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
-  <div class="w3-right">
-  <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-right" href="javascript:void(0)" onclick="open_search(this)" title='Search W3Schools'><i class='fa'>&#xe802;</i></a>
-  <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-right" href="javascript:void(0)" onclick="open_translate(this)" title='Translate W3Schools'><i class='fa'>&#xe801;</i></a>
-</div>
-</div>
+			<div class="b_head">
+				<div class="row clearfix">
+					<div class="logo">
+						<a href="index.html" title="iPress - Responsive News/Blog/Magazine HTML5"><img src="images/logo.png" alt="iPress - Responsive News/Blog/Magazine HTML5"></a>
+					</div><!-- /logo -->
+	
+					<div class="ads">
+						<a href="#" title="ADS"><img src="images/ads.jpg" alt="ADS"></a>
+					</div><!-- /ads -->
+				</div><!-- /row -->
+			</div><!-- /b head -->
 
-<nav class="w3-sidebar w3-collapse w3-white w3-card-2" id="mySidenav">
-<div class="w3-bar-block">
- <div class="w3-container">
-  <h4 class="w3-margin-top">HTML และ CSS</h4>
- </div>
-<a class="w3-bar-item w3-button" href="html/default.html"> เรียนรู้ HTML </a>
-  <a class="w3-bar-item w3-button" href="css/default.html"> เรียนรู้ CSS </a>
-  <a class="w3-bar-item w3-button" href="w3css/default.html"> เรียนรู้ W3.CSS </a>
-  <a class="w3-bar-item w3-button" href="colors/default.html"> เรียนรู้สี </a>
-  <a class="w3-bar-item w3-button" href="bootstrap/default.html"> เรียนรู้ Bootstrap 3 </a>
-  <a class="w3-bar-item w3-button" href="bootstrap4/default.html"> เรียนรู้ Bootstrap 4 </a>
-  <a class="w3-bar-item w3-button" href="icons/default.html"> เรียนรู้ไอคอน </a>
-  <a class="w3-bar-item w3-button" href="graphics/default.html"> เรียนรู้กราฟิก </a>
-  <a class="w3-bar-item w3-button" href="howto/default.html"> เรียนรู้วิธีการ </a>
- <div class="w3-container">
-  <h4 class="w3-margin-top">JavaScript</h4>
- </div>
-<a class="w3-bar-item w3-button" href="js/default.html"> เรียนรู้ JavaScript </a>
-  <a class="w3-bar-item w3-button" href="jquery/default.html"> เรียนรู้ jQuery </a>
-  <a class="w3-bar-item w3-button" href="angular/default.html"> เรียนรู้ AngularJS </a>
-  <a class="w3-bar-item w3-button" href="js/js_json_intro.html"> เรียนรู้ JSON </a>
-  <a class="w3-bar-item w3-button" href="js/js_ajax_intro.html"> เรียนรู้ AJAX </a>
-  <a class="w3-bar-item w3-button" href="w3js/default.html"> เรียนรู้ W3.JS </a>
- <div class="w3-container">
-  <h4 class="w3-margin-top">Server Side</h4>
- </div>
- <a class="w3-bar-item w3-button" href="sql/default.html">Learn SQL</a>
- <a class="w3-bar-item w3-button" href="php/default.html">Learn PHP</a>
- <a class="w3-bar-item w3-button" href="python/default.html">Learn Python</a>
- <a class="w3-bar-item w3-button" href='asp/default.html'>Learn ASP</a>
- <a class="w3-bar-item w3-button" href='nodejs/default.html'>Learn Node.js</a>
- <a class="w3-bar-item w3-button" href='nodejs/nodejs_raspberrypi.html'>Learn Raspberry Pi</a>
- <div class="w3-container">
-  <h4 class="w3-margin-top">Web Building</h4>
- </div>
- <a class="w3-bar-item w3-button" href="w3css/w3css_templates.html">Web Templates</a>
- <a class="w3-bar-item w3-button" href="browsers/default.html">Web Statistics</a>
- <a class="w3-bar-item w3-button" href="cert/default.html">Web Certificates</a>
- <a class="w3-bar-item w3-button" href='tryit/default.html'>Web Editor</a>
- <div class="w3-container">
-  <h4 class="w3-margin-top">XML Tutorials</h4>
- </div>
- <a class="w3-bar-item w3-button" href="xml/default.html">Learn XML</a>
- <a class="w3-bar-item w3-button" href='xml/ajax_intro.html'>Learn XML AJAX</a>
- <a class="w3-bar-item w3-button" href="xml/dom_intro.html">Learn XML DOM</a>
- <a class="w3-bar-item w3-button" href='xml/xml_dtd_intro.html'>Learn XML DTD</a>
- <a class="w3-bar-item w3-button" href='xml/schema_intro.html'>Learn XML Schema</a>
- <a class="w3-bar-item w3-button" href="xml/xsl_intro.html">Learn XSLT</a>
- <a class="w3-bar-item w3-button" href='xml/xpath_intro.html'>Learn XPath</a>
- <a class="w3-bar-item w3-button" href='xml/xquery_intro.html'>Learn XQuery</a>
- <div class="w3-container">
-  <h4 class="w3-margin-top">References</h4>
- </div>
- <a class="w3-bar-item w3-button" href='tags/default.html'>HTML Reference</a>
- <a class="w3-bar-item w3-button" href='cssref/default.html'>CSS Reference</a>
- <a class="w3-bar-item w3-button" href='jsref/default.html'>JS Reference</a>
- <a class="w3-bar-item w3-button" href='sql/sql_quickref.html'>SQL Reference</a>
- <a class="w3-bar-item w3-button" href='php/php_ref_overview.html'>PHP Reference</a>
- <a class="w3-bar-item w3-button" href='jquery/jquery_ref_overview.html'>jQuery Reference</a>
- <a class="w3-bar-item w3-button" href='python/python_reference.html'>Python Reference</a>
- <a class="w3-bar-item w3-button" href='bootstrap/bootstrap_ref_all_classes.html'>Bootstrap Reference</a>
- <a class="w3-bar-item w3-button" href='charsets/default.html'>UTF-8 Reference</a>
-</div>
-</nav>
+			<div class="row clearfix">
+				<div class="sticky_true">
+					<div class="c_head clearfix">
+						<nav>
+							<ul class="sf-menu">
+								<li class="current colordefault home_class"><a href="index.html"><i class="icon-home"></i></a>
+									<ul>
+										<li><a href="index_right_sidebars.html">Rigth Sidebars</a></li>
+										<li><a href="index_left_sidebars.html">Left Sidebars</a></li>
+										<li><a href="index_new_2.html">Homepage 2</a></li>
+										<li><a href="index_new_3.html">Homepage 3</a></li>
+									</ul>
+								</li>
+								<li class="color1"><a href="#"><i class="fa-reorder"></i></a>
+									<ul>
+										<li><a href="shortcodes.html"><i class="icon-gear"></i>Shortcodes</a></li>
+										<li><a href="rtl.html"><i class="icon-user"></i>RTL Version</a></li>
+										<li><a href="single_post.html"><i class="icon-camera"></i>Single post</a></li>
+										<li><a href="category.html"><i class="icon-music"></i>Category page</a></li>
+										<li><a href="404.html"><i class="icon-media-play"></i>Error 404</a></li>
+										<li><a href="#"><i class="icon-map"></i>3rd Menu</a>
+											<ul>
+												<li><a href="#">Example 1</a></li>
+												<li><a href="#">Example 2</a>
+													<ul>
+														<li><a href="#">Example 1</a></li>
+														<li><a href="#">Example 2</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="color2"><a href="category.html">Travel</a>
+									<ul class="col4 mega">
+										<li class="col1">
+											<a href="single_post.html">
+												<img src="images/assets/m_1.jpg" alt="#" title="#">
+												<h4> Here's What Instagram Ads Will Look Like </h4>
+											</a>
+										</li>
+										<li class="col1">
+											<a href="single_post.html">
+												<img src="images/assets/m_2.jpg" alt="#" title="#">
+												<h4> Lorem Ipsum is simply dummy text </h4>
+											</a>
+										</li>
+										<li class="col1">
+											<a href="single_post.html">
+												<img src="images/assets/m_3.jpg" alt="#" title="#">
+												<h4> What do you think about our website </h4>
+											</a>
+										</li>
+										<li class="col1">
+											<a href="single_post.html">
+												<img src="images/assets/m_4.jpg" alt="#" title="#">
+												<h4> Printer took a galley of type and scrambled </h4>
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="color3"><a href="category.html">People</a>
+									<ul class="col4 mega">
+										<li class="col1">
+											<a href="single_post.html">
+												<img src="images/assets/m_1.jpg" alt="#" title="#">
+												<h4> Here's What Instagram Ads Will Look Like </h4>
+											</a>
+										</li>
+										<li class="col1">
+											<a href="single_post.html">
+												<img src="images/assets/m_2.jpg" alt="#" title="#">
+												<h4> Lorem Ipsum is simply dummy text </h4>
+											</a>
+										</li>
+										<li class="col1">
+											<a href="single_post.html">
+												<img src="images/assets/m_3.jpg" alt="#" title="#">
+												<h4> What do you think about our website </h4>
+											</a>
+										</li>
+										<div class="col1">
+											<li><a href="#">Example 1</a></li>
+											<li><a href="#">Example 2</a></li>
+											<li><a href="#">Example 3</a></li>
+											<li><a href="#">Example 4</a></li>
+											<li><a href="#">Example 5</a></li>
+										</div>
+									</ul>
+								</li>
+								<li class="color4"><a href="category.html">Sports</a>
+									<ul class="col4 mega">
+										<div class="col1">
+											<li><a href="#">Example 1</a></li>
+											<li><a href="#">Example 2</a></li>
+											<li><a href="#">Example 3</a></li>
+											<li><a href="#">Example 4</a></li>
+											<li><a href="#">Example 5</a></li>
+										</div>
+										<div class="col1">
+											<li><a href="#">Example 6</a></li>
+											<li><a href="#">Example 7</a></li>
+											<li><a href="#">Example 8</a></li>
+											<li><a href="#">Example 9</a></li>
+											<li><a href="#">Example 10</a></li>
+										</div>
+										<div class="col1">
+											<li><a href="#">Example 11</a></li>
+											<li><a href="#">Example 12</a></li>
+											<li><a href="#">Example 13</a></li>
+											<li><a href="#">Example 14</a></li>
+											<li><a href="#">Example 15</a></li>
+										</div>
+										<div class="col1">
+											<li><a href="#">Example 16</a></li>
+											<li><a href="#">Example 17</a></li>
+											<li><a href="#">Example 18</a></li>
+											<li><a href="#">Example 19</a></li>
+											<li><a href="#">Example 20</a></li>
+										</div>
+									</ul>
+								</li>
+								<li class="color5"><a href="category.html">Music</a></li>
+								<li class="color6"><a href="category.html">TV</a></li>
+								<li class="color7"><a href="category.html">Entertainment</a></li>
+								<li class="color8"><a href="contact.html">Contact</a></li>
+							</ul><!-- /menu -->
+						</nav><!-- /nav -->
+	
+						<div class="right_icons">
+							<a class="random_post bottomtip" href="#" title="Random Post"><i class="icon-media-shuffle"></i></a><!-- /random post -->
+	
+							<div class="search">
+								<div class="search_icon"><i class="fa-search"></i></div>
+								<div class="s_form">
+									<form action="search_result.html" id="search" method="get">
+										<input id="inputhead" name="search" type="text" onFocus="if (this.value=='Start Searching...') this.value = '';" onBlur="if (this.value=='') this.value = 'Start Searching...';" value="Start Searching..." placeholder="Start Searching ...">
+										<button type="submit"><i class="fa-search"></i></button>
+									</form><!-- /form -->
+								</div><!-- /s form -->
+							</div><!-- /search -->
+						</div><!-- /right icons -->
+					</div><!-- /c head -->
+				</div><!-- /sticky -->
+			</div><!-- /row -->
+		</header><!-- /header -->
 
-<div id='myAccordion' class="w3-card-2 w3-light-grey w3-center w3-hide-large" style="display:none;cursor:default">
- <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-xlarge w3-right">&times;</a><br>
- <div class="w3-container w3-padding-32">
-  <a class="w3-button w3-block w3-large w3-wide" onclick="open_xs_menu('tutorials');" href="javascript:void(0);">TUTORIALS <i class='fa fa-caret-down'></i></a>
-  <div id="sectionxs_tutorials" class="w3-white w3-show"></div>
-  <a class="w3-button w3-block w3-large w3-wide" onclick="open_xs_menu('references')" href="javascript:void(0);">REFERENCES <i class='fa fa-caret-down'></i></a>
-  <div id="sectionxs_references" class="w3-white w3-show"></div>
-  <a class="w3-button w3-block w3-large w3-wide" onclick="open_xs_menu('examples')" href="javascript:void(0);">EXAMPLES <i class='fa fa-caret-down'></i></a>
-  <div id="sectionxs_examples" class="w3-white w3-show"></div>
- </div>
-</div>
+		<div class="page-content">
+			<div class="row clearfix">
+				<div class="grid_9 alpha">
+					<div class="ipress_slider mbf">
+						<div class="slider_a owl-carouseltheme">
+							<!-- /slide -->
 
-<nav id="nav_tutorials" class="w3-light-grey w3-card-2 w3-hide-small navex">
- <span onclick="w3_close_nav('tutorials')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
- <div class="w3-row-padding w3-bar-block">
-  <div class="w3-col l3 m6">
-  <h3 class = "w3-margin-top"> HTML และ CSS </h3>
-   <a class="w3-bar-item w3-button" href="html/default.html"> เรียนรู้ HTML </a>
-   <a class="w3-bar-item w3-button" href="css/default.html"> เรียนรู้ CSS </a>
-   <a class="w3-bar-item w3-button" href="w3css/default.html"> เรียนรู้ W3.CSS </a>
-   <a class="w3-bar-item w3-button" href="colors/default.html"> เรียนรู้สี </a>
-   <a class="w3-bar-item w3-button" href="bootstrap/default.html"> เรียนรู้ Bootstrap 3 </a>
-   <a class="w3-bar-item w3-button" href="bootstrap4/default.html"> เรียนรู้ Bootstrap 4 </a>
-   <a class="w3-bar-item w3-button" href="icons/default.html"> เรียนรู้ไอคอน </a>
-   <a class="w3-bar-item w3-button" href="graphics/default.html"> เรียนรู้กราฟิก </a>
-   <a class="w3-bar-item w3-button" href='graphics/svg_intro.html'> เรียน SVG </a>
-   <a class="w3-bar-item w3-button" href='graphics/canvas_intro.html'> เรียนรู้ Canvas </a>
-   <a class="w3-bar-item w3-button" href="howto/default.html"> เรียนรู้วิธีการ </a>
-   <div class ="w3-hide-large w3-hide-small">
-   <h3 class ="w3-margin-top"> บทแนะนำ XML </h3>
-   <a class="w3-bar-item w3-button" href="xml/default.html"> เรียนรู้ XML </a>
-   <a class="w3-bar-item w3-button" href='xml/ajax_intro.html'> เรียนรู้ XML AJAX </a>
-   <a class="w3-bar-item w3-button" href="xml/dom_intro.html"> เรียนรู้ XML DOM </a>
-   <a class="w3-bar-item w3-button" href='xml/xml_dtd_intro.html'> เรียนรู้ XML DTD </a>
-   <a class="w3-bar-item w3-button" href='xml/schema_intro.html'> เรียนรู้สคีมา XML </a>
-   <a class="w3-bar-item w3-button" href="xml/xsl_intro.html"> เรียนรู้ XSLT </a>
-   <a class="w3-bar-item w3-button" href='xml/xpath_intro.html'> เรียนรู้ XPath </a>
-   <a class="w3-bar-item w3-button" href='xml/xquery_intro.html'> เรียนรู้ XQuery </a>
-  </div>
-  </div>
-  <div class="w3-col l3 m6">
-<h3 class = "w3-margin-top"> JavaScript </h3>
-    <a class="w3-bar-item w3-button" href="js/default.html"> เรียนรู้ JavaScript </a>
-    <a class="w3-bar-item w3-button" href="jquery/default.html"> เรียนรู้ jQuery </a>
-    <a class="w3-bar-item w3-button" href="angular/default.html"> เรียนรู้ AngularJS </a>
-    <a class="w3-bar-item w3-button" href="js/js_json_intro.html"> เรียนรู้ JSON </a>
-    <a class="w3-bar-item w3-button" href="js/js_ajax_intro.html"> เรียนรู้ AJAX </a>
-    <a class="w3-bar-item w3-button" href="w3js/default.html"> เรียนรู้ W3.JS </a>
-  </div> 
- <div class="w3-col l3 m6">
-  <h3 class = "w3-margin-top"> ฝั่งเซิร์ฟเวอร์ </h3>
-    <a class="w3-bar-item w3-button" href="sql/default.html"> เรียนรู้ SQL </a>
-    <a class="w3-bar-item w3-button" href="php/default.html"> เรียนรู้ PHP </a>
-    <a class="w3-bar-item w3-button" href="python/default.html"> เรียนรู้ Python </a>
-    <a class="w3-bar-item w3-button" href='asp/default.html'> เรียนรู้ ASP </a>
-    <a class="w3-bar-item w3-button" href='nodejs/default.html'> เรียนรู้ Node.js </a>
-    <a class="w3-bar-item w3-button" href='nodejs/nodejs_raspberrypi.html'> เรียน Raspberry Pi </a>
+							<div class="item clearfix">
+								<div class="half">
+									<div class="slide_details">
+										<a class="cat color4" href="#" title="View all posts under Sports">Sports</a>
+										<span class="post_rating" href="#" title="Rating"><i class="fa fa-star"></i> 9.11</span>
+										<h3><a href="single_post.html">Sed ut perspiciatis unde omnis iste</a></h3>
+									</div>
+									<a href="single_post.html"><img src="images/assets/slider4.jpg" alt=""></a>
+								</div><!-- /half -->
 
-  <h3 class = "w3-margin-top"> การสร้างเว็บ </h3>
-    <a class="w3-bar-item w3-button" href="w3css/w3css_templates.html"> เทมเพลตเว็บ </a>
-    <a class="w3-bar-item w3-button" href="browsers/default.html"> สถิติของเว็บ </a>
-    <a class="w3-bar-item w3-button" href="cert/default.html"> ใบรับรองเว็บ </a>
-    <a class="w3-bar-item w3-button" href='tryit/default.html'> ตัวแก้ไขเว็บ </a>
-  </div>
-  <div class="w3-col l3 m6 w3-hide-medium">
-  <h3 class = "w3-margin-top"> บทแนะนำ XML </h3>
-    <a class="w3-bar-item w3-button" href="xml/default.html"> เรียนรู้ XML </a>
-    <a class="w3-bar-item w3-button" href='xml/ajax_intro.html'> เรียนรู้ XML AJAX </a>
-    <a class="w3-bar-item w3-button" href="xml/dom_intro.html"> เรียนรู้ XML DOM </a>
-    <a class="w3-bar-item w3-button" href='xml/xml_dtd_intro.html'> เรียนรู้ XML DTD </a>
-    <a class="w3-bar-item w3-button" href='xml/schema_intro.html'> เรียนรู้ XML Schema </a>
-    <a class="w3-bar-item w3-button" href="xml/xsl_intro.html"> เรียนรู้ XSLT </a>
-    <a class="w3-bar-item w3-button" href='xml/xpath_intro.html'> เรียนรู้ XPath </a>
-    <a class="w3-bar-item w3-button" href='xml/xquery_intro.html'> เรียนรู้ XQuery </a>
-  </div>
- </div>
- <br class="hidesm">
-</nav>
+								<div class="half">
+									<div class="slide_details">
+										<a class="cat color5" href="#" title="View all posts under Music">Music</a>
+										<span class="post_rating" href="#" title="Rating"><i class="fa fa-star"></i> 10</span>
+										<h3><a href="single_post.html">Discovered the undoubtable source</a></h3>
+									</div>
+									<a href="single_post.html"><img src="images/assets/slider5.jpg" alt=""></a>
+								</div><!-- /half -->
 
-<nav id="nav_references" class="w3-light-grey w3-card-2 w3-hide-small navex">
- <span onclick="w3_close_nav('references')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
- <div class="w3-row-padding w3-bar-block">
-  <div class="w3-col l3 m6">
-   <h3 class="w3-margin-top">HTML</h3>
-   <a class="w3-bar-item w3-button" href='tags/default.html'>HTML Tag Reference</a>
-   <a class="w3-bar-item w3-button" href='tags/ref_eventattributes.html'>HTML Event Reference</a>
-   <a class="w3-bar-item w3-button" href='colors/default.html'>HTML Color Reference</a>
-   <a class="w3-bar-item w3-button" href='tags/ref_attributes.html'>HTML Attribute Reference</a>
-   <a class="w3-bar-item w3-button" href='tags/ref_canvas.html'>HTML Canvas Reference</a>
-   <a class="w3-bar-item w3-button" href='graphics/svg_reference.html'>HTML SVG Reference</a>
-   <a class="w3-bar-item w3-button" href='graphics/google_maps_reference.html'>Google Maps Reference</a>
-   <h3 class="w3-margin-top">CSS</h3>
-   <a class="w3-bar-item w3-button" href='cssref/default.html'>CSS Reference</a>
-   <a class="w3-bar-item w3-button" href='cssref/css3_browsersupport.html'>CSS Browser Support</a>
-   <a class="w3-bar-item w3-button" href='cssref/css_selectors.html'>CSS Selector Reference</a>
-   <a class="w3-bar-item w3-button" href='w3css/w3css_references.html'>W3.CSS Reference</a>
-   <a class="w3-bar-item w3-button" href='bootstrap/bootstrap_ref_all_classes.html'>Bootstrap Reference</a>
-   <a class="w3-bar-item w3-button" href='icons/icons_reference.html'>Icon Reference</a>
-  </div>
-  <div class="w3-col l3 m6">
-   <h3 class="w3-margin-top">JavaScript</h3>
-   <a class="w3-bar-item w3-button" href='jsref/default.html'>JavaScript Reference</a>
-   <a class="w3-bar-item w3-button" href='jsref/default.html'>HTML DOM Reference</a>
-   <a class="w3-bar-item w3-button" href='jquery/jquery_ref_overview.html'>jQuery Reference</a>
-   <a class="w3-bar-item w3-button" href='angular/angular_ref_directives.html'>AngularJS Reference</a>
-   <a class="w3-bar-item w3-button" href="w3js/w3js_references.html">W3.JS Reference</a>
-  </div>
-  <div class="w3-col l3 m6">
-   <h3 class="w3-margin-top">Server Side</h3>
-   <a class="w3-bar-item w3-button" href='php/php_ref_overview.html'>PHP Reference</a>
-   <a class="w3-bar-item w3-button" href='sql/sql_quickref.html'>SQL Reference</a>
-   <a class="w3-bar-item w3-button" href='python/python_ref_functions.html'>Python Reference</a>
-   <a class="w3-bar-item w3-button" href='asp/asp_ref_response.html'>ASP Reference</a>
-   <h3 class="w3-margin-top">XML</h3>
-   <a class="w3-bar-item w3-button" href='xml/dom_nodetype.html'>XML DOM Reference</a>
-   <a class="w3-bar-item w3-button" href='xml/dom_http.html'>XML Http Reference</a>
-   <a class="w3-bar-item w3-button" href='xml/xsl_elementref.html'>XSLT Reference</a>
-   <a class="w3-bar-item w3-button" href='xml/schema_elements_ref.html'>XML Schema Reference</a>
-  </div>
-  <div class="w3-col l3 m6">
-   <h3 class="w3-margin-top">Character Sets</h3>
-   <a class="w3-bar-item w3-button" href='charsets/default.html'>HTML Character Sets</a>
-   <a class="w3-bar-item w3-button" href='charsets/ref_html_ascii.html'>HTML ASCII</a>
-   <a class="w3-bar-item w3-button" href='charsets/ref_html_ansi.html'>HTML ANSI</a>
-   <a class="w3-bar-item w3-button" href='charsets/ref_html_ansi.html'>HTML Windows-1252</a>
-   <a class="w3-bar-item w3-button" href='charsets/ref_html_8859.html'>HTML ISO-8859-1</a>
-   <a class="w3-bar-item w3-button" href='charsets/ref_html_symbols.html'>HTML Symbols</a>
-   <a class="w3-bar-item w3-button" href='charsets/ref_html_utf8.html'>HTML UTF-8</a>
-  </div>
- </div>
- <br class="hidesm">
-</nav>
+								<div class="half">
+									<div class="slide_details">
+										<a class="cat color6" href="#" title="View all posts under TV">TV</a>
+										<span class="post_rating" href="#" title="Rating"><i class="fa fa-star"></i> 6.99</span>
+										<h3><a href="single_post.html">The standard chunk of Lorem ipsum</a></h3>
+									</div>
+									<a href="single_post.html"><img src="images/assets/slider6.jpg" alt=""></a>
+								</div><!-- /half -->
+							</div><!-- /slide -->
 
-<nav id="nav_examples" class="w3-light-grey w3-card-2 w3-hide-small navex">
- <span onclick="w3_close_nav('examples')" class="w3-button w3-xlarge w3-display-topright barex">&times;</span><br>
- <div class="w3-row-padding w3-bar-block">
-  <div class="w3-col l3 m6">
-   <h3 class="w3-margin-top">HTML and CSS</h3>
-   <a class="w3-bar-item w3-button" href='html/html_examples.html'>HTML Examples</a>
-   <a class="w3-bar-item w3-button" href='css/css_examples.html'>CSS Examples</a>
-   <a class="w3-bar-item w3-button" href='w3css/w3css_examples.html'>W3.CSS Examples</a>
-   <a class="w3-bar-item w3-button" href='w3css/w3css_templates.html'>W3.CSS Templates</a>
-   <a class="w3-bar-item w3-button" href='bootstrap/bootstrap_examples.html'>Bootstrap Examples</a>
-   <a class="w3-bar-item w3-button" href='howto/default.html'>How To Examples</a>
-   <a class="w3-bar-item w3-button" href='graphics/svg_examples.html'>SVG Examples</a>
-   <div class="w3-hide-large w3-hide-small">
-     <h3 class="w3-margin-top">Quizzes</h3>
-     <a class="w3-bar-item w3-button" href="quiztest/quiztest103d.html?Qtest=HTML" target="_top">HTML Quiz</a>
-     <a class="w3-bar-item w3-button" href="quiztest/quiztest459d.html?Qtest=CSS" target="_top">CSS Quiz</a>
-     <a class="w3-bar-item w3-button" href="quiztest/quiztest3f77.html?Qtest=JavaScript" target="_top">JavaScript Quiz</a>
-     <a class="w3-bar-item w3-button" href="quiztest/quiztest0544.html?Qtest=Bootstrap" target="_top">Bootstrap Quiz</a>
-     <a class="w3-bar-item w3-button" href="quiztest/quiztest406d.html?Qtest=jQuery" target="_top">jQuery Quiz</a>
-     <a class="w3-bar-item w3-button" href="quiztest/quiztestb7df.html?Qtest=PHP" target="_top">PHP Quiz</a>
-     <a class="w3-bar-item w3-button" href="quiztest/quiztestc2d0.html?Qtest=SQL" target="_top">SQL Quiz</a>
-     <a class="w3-bar-item w3-button" href="quiztest/quiztest36de.html?Qtest=XML" target="_top">XML Quiz</a>
-   </div>
-  </div>
-  <div class="w3-col l3 m6">
-<h3 class = "w3-margin-top"> JavaScript </h3>
-    <a class="w3-bar-item w3-button" href="js/js_examples.html" target="_top"> ตัวอย่าง JavaScript </a>
-    <a class="w3-bar-item w3-button" href="js/js_dom_examples.html" target="_top"> ตัวอย่าง HTML DOM </a>
-    <a class="w3-bar-item w3-button" href="jquery/jquery_examples.html" target="_top"> ตัวอย่าง jQuery </a>
-    <a class="w3-bar-item w3-button" href="angular/angular_examples.html" target="_top"> AngularJS ตัวอย่าง </a>
-    <a class="w3-bar-item w3-button" href="js/js_ajax_examples.html" target="_top"> ตัวอย่าง AJAX </a>
-    <a class="w3-bar-item w3-button" href="w3js/w3js_examples.html"> W3.JS ตัวอย่าง </a>
-  </div>
-  <div class="w3-col l3 m6">
-  <h3 class = "w3-margin-top"> ฝั่งเซิร์ฟเวอร์ </h3>
-    <a class="w3-bar-item w3-button" href="php/php_examples.html" target="_top"> ตัวอย่าง PHP </a>
-    <a class="w3-bar-item w3-button" href="asp/asp_examples.html" target="_top"> ตัวอย่าง ASP </a>
-    <h3 class = "w3-margin-top"> XML </h3>
-    <a class="w3-bar-item w3-button" href="xml/xml_examples.html" target="_top"> ตัวอย่าง XML </a>
-    <a class="w3-bar-item w3-button" href="xml/xsl_examples.html" target="_top"> ตัวอย่าง XSLT </a>
-    <a class="w3-bar-item w3-button" href="xml/xpath_examples.html" target="_top"> ตัวอย่าง XPath </a>
-    <a class="w3-bar-item w3-button" href="xml/schema_example.html" target="_top"> ตัวอย่างสคีมา XML </a>
-    <a class="w3-bar-item w3-button" href="xml/ajax_examples.html" target="_top"> ตัวอย่าง AJAX </a>
-    <a class="w3-bar-item w3-button" href="graphics/svg_examples.html" target="_top"> ตัวอย่าง SVG </a>
-  </div>
-  <div class="w3-col l3 m6 w3-hide-medium">
-   <h3 class = "w3-margin-top"> แบบทดสอบ </h3>
-    <a class="w3-bar-item w3-button" href="quiztest/quiztest103d.html?Qtest=HTML" target="_top"> แบบทดสอบ HTML </a>
-    <a class="w3-bar-item w3-button" href="quiztest/quiztest459d.html?Qtest=CSS" target="_top"> แบบทดสอบ CSS </a>
-    <a class="w3-bar-item w3-button" href="quiztest/quiztest3f77.html?Qtest=JavaScript" target="_top"> แบบทดสอบ JavaScript </a>
-    <a class="w3-bar-item w3-button" href="quiztest/quiztest0544.html?Qtest=Bootstrap" target="_top"> แบบทดสอบ Bootstrap </a>
-    <a class="w3-bar-item w3-button" href="quiztest/quiztest406d.html?Qtest=jQuery" target="_top"> แบบทดสอบ jQuery </a>
-    <a class="w3-bar-item w3-button" href="quiztest/quiztestb7df.html?Qtest=PHP" target="_top"> แบบทดสอบ PHP </a>
-    <a class="w3-bar-item w3-button" href="quiztest/quiztestc2d0.html?Qtest=SQL" target="_top"> แบบทดสอบ SQL </a>
-    <a class="w3-bar-item w3-button" href="quiztest/quiztest36de.html?Qtest=XML" target="_top"> แบบทดสอบ XML </a>
-  </div>
-</div>
- <br class="hidesm">
-</nav>
+						</div><!-- /slider -->
+					</div><!-- /slider ipress -->
 
-<!-- MAIN -->
-<div class="w3-main">
+					<div class="grid_8 omega posts righter">
+						<div class="post_day mbf clearfix">
+							<div class="title colordefault"><h4>Post Of The Day</h4></div>
 
-<div class="w3-row w3-margin-bottom">
- <div class="w3-col l6 w3-center" style="padding:3%">
-  <h1>HTML</h1>
-  <p class="w3-xlarge w3-text-dark-grey">ภาษาสำหรับการสร้างเว็บเพจ</p>
-  <a href="html/default.html" class="w3-button w3-dark-grey">เรียนรู้ HTML</a>
-  <a href="tags/default.html" class="w3-button w3-dark-grey">อ้างอิง HTML</a>
- </div>
- <div class="w3-col l6" style="padding:3%">
-  <div class="w3-hide-small w3-light-grey w3-card-2" style="padding:16px;">
-   <h3>ตัวอย่าง HTML:</h3>
-   <div class="w3-code htmlHigh notranslate w3-border-green">
-&lt;!DOCTYPE html&gt;<br>
-&lt;html&gt;<br>
-&lt;title&gt;HTML Tutorial&lt;/title&gt;<br>
-&lt;body&gt;<br><br>
-&lt;h1&gt;This is a heading&lt;/h1&gt;<br>
-&lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>
-&lt;/body&gt;<br>
-&lt;/html&gt;
-   </div>
-   <a href="html/tryitfb35.html?filename=tryhtml_default" target="_blank" class="w3-button w3-theme w3-hover-green w3-hover-shadow">ลองด้วยตัวคุณเอง &raquo;</a>
-  </div>
- </div>
-</div>
+							<div class="grid_6 alpha relative">
+								<a class="cat" href="#" title="View all posts under Travel">Travel</a>
+								<a class="float-shadow" href="single_post.html"><img src="images/assets/r_4.jpg" alt=""></a>
+							</div><!-- /grid6 alpha -->
 
-<div class="w3-row w3-light-grey w3-hide-medium w3-hide-small">
- <div class="w3-col l6" style="padding-top:40px;padding:3%;">
-  <h3>ตัวอย่าง CSS:</h3>
-  <div class="w3-code cssHigh notranslate w3-card-2 w3-border-green">
-body {<br>
-&nbsp;&nbsp;&nbsp; background-color: lightblue;<br>}<br>
-h1 {<br>
-&nbsp;&nbsp;&nbsp; color: white;<br>
-&nbsp;&nbsp;&nbsp; text-align: center;<br>}<br>
-p {<br>
-&nbsp;&nbsp;&nbsp; font-family: verdana;<br>
-&nbsp;&nbsp;&nbsp; font-size: 20px;<br>}
-  </div>
-  <a href="css/tryit438d.html?filename=trycss_default" target="_blank" class="w3-button w3-theme w3-hover-green w3-hover-shadow">Try it Yourself &raquo;</a>
- </div>
- <div class="w3-col l6 w3-center" style="padding:3%">
-  <h1>CSS</h1>
-  <p class="w3-xlarge">ภาษาสำหรับจัดรูปแบบหน้าเว็บ</p>
-  <a href="css/default.html" class="w3-button w3-dark-grey">เรียนรู้ CSS</a>
-  <a href="cssref/default.html" class="w3-button w3-dark-grey">การอ้างอิง CSS</a>
- </div>
-</div>
+							<div class="grid_6 omega">
+								<div class="post_day_content">
+									<h3> <a href="single_post.html">Here's What Instagram Ads Will Look Like</a> </h3>
+									<div class="meta mb"> 3 hours ago    /    <a href="single_post.html">0 comments</a> </div>
+									<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry unknown printer took a galley of type and scrambled it to make a type has survived not only fiv... </p>
+								</div><!-- /post content -->
+							</div><!-- /grid6 omega -->
+						</div><!-- /post day -->
 
-<div class="w3-row w3-light-grey w3-hide-large" style="padding-bottom:30px">
- <div class="w3-col l6 w3-center" style="padding:3%">
-  <h1>CSS</h1>
-  <p class="w3-xlarge">ภาษาสำหรับจัดรูปแบบหน้าเว็บ</p>
-  <a href="css/default.html" class="w3-button w3-dark-grey">เรียนรู้ CSS</a>
-  <a href="cssref/default.html" class="w3-button w3-dark-grey">การอ้างอิง CSS</a>
- </div>
- <div class="w3-col l6 w3-hide-small" style="padding-top:40px;padding:3%;">
-  <h3>ตัวอย่าง CSS:</h3>
-  <div class="w3-code cssHigh notranslate w3-card-2 w3-border-green">
-body {<br>
-&nbsp;&nbsp;&nbsp; background-color: lightblue;<br>}<br>
-h1 {<br>
-&nbsp;&nbsp;&nbsp; color: white;<br>
-&nbsp;&nbsp;&nbsp; text-align: center;<br>}<br>
-p {<br>
-&nbsp;&nbsp;&nbsp; font-family: verdana;<br>
-&nbsp;&nbsp;&nbsp; font-size: 20px;<br>}
-  </div>
-  <a href="css/tryit438d.html?filename=trycss_default" target="_blank" class="w3-button w3-theme w3-hover-green w3-hover-shadow">ลองด้วยตัวคุณเอง &raquo;</a>
- </div>
-</div>
+						<div class="posts_block mbf clearfix">
+							<div class="title color5">
+								<h4>Music</h4>
+								<a href="#" class="feed toptip" title="RSS Feed"><i class="icon-feed"></i></a>
+							</div><!-- /title bar -->
 
-<div class="w3-row">
- <div class="w3-col l6 w3-center" style="padding:3%">
-  <h1 class="w3-jumbo">JavaScript</h1>
-  <p class="w3-xlarge w3-text-dark-grey">ภาษาสำหรับการเขียนโปรแกรมหน้าเว็บ</p>
-  <a href="js/default.html" class="w3-button w3-dark-grey">เรียนรู้ JAVASCRIPT</a>
-  <a href="jsref/default.html" class="w3-button w3-dark-grey">การอ้างอิง JAVASCRIPT</a>
- </div>
- <div class="w3-col l6" style="padding:3%">
-  <div class="w3-hide-small w3-card-2 w3-light-grey" style="padding:16px;">
-   <h3>ตัวอย่าง JavaScript:</h3>
-   <div class="w3-code notranslate w3-card-2 w3-border-green">
-   <div class="htmlHigh">
-&lt;script&gt;
-   </div>
-   <div class="jsHigh">
-function myFunction() {<br>
-&nbsp;&nbsp;&nbsp; var x = document.getElementById(&quot;demo&quot;);<br>
-&nbsp;&nbsp;&nbsp; x.style.fontSize = &quot;25px&quot;; <br>
-&nbsp;&nbsp;&nbsp; x.style.color = &quot;red&quot;; <br>}<br>
-    </div>
-    <div class="htmlHigh">
-&lt;/script&gt;<br><br>
-&lt;button onclick=&quot;myFunction()&quot;&gt;คลิกฉัน!&lt;/button&gt;
-    </div>
-   </div>
-   <a href="js/tryit8004.html?filename=tryjs_default" target="_blank" class="w3-button w3-theme w3-hover-green w3-hover-shadow">ลองด้วยตัวคุณเอง &raquo;</a>
-  </div>
- </div>
-</div>
+							<div class="grid_6 alpha">
+								<div class="mb float-shadow"><a href="single_post.html"><img src="images/assets/r_5.jpg" alt=""></a></div>
+								<div class="post_m_content">
+									<h3> <a href="single_post.html">Here's What Instagram Ads Will Look Like</a> </h3>
+									<div class="meta mb"> 3 hours ago    /    <a href="single_post.html">0 comments</a> </div>
+									<p> Lorem Ipsum is simply dummy text of the printing and typesetting... </p>
+								</div><!-- post content -->
+							</div><!-- /grid6 omega -->
 
-<div class="w3-row w3-light-grey w3-padding-16">
- <div class="w3-col l4 w3-center" style="padding:3%;">
-  <div class="w3-card-2 w3-white">
-   <h2 class="w3-xxlarge">SQL</h2>
-   <h4 class="w3-text-dark-grey">ภาษาสำหรับการเข้าถึงฐานข้อมูล</h4>
-   <a href="sql/default.html" class="w3-button w3-dark-grey">เรียนรู้ SQL</a>
-  </div>
- </div>
- <div class="w3-col l4 w3-center" style="padding:3%;">
-  <div class="w3-card-2 w3-white">
-   <h2 class="w3-xxlarge">PHP</h2>
-   <h4 class="w3-text-dark-grey">ภาษาโปรแกรมเว็บเซิร์ฟเวอร์</h4>
-   <a href="php/default.html" class="w3-button w3-dark-grey">เรียนรู้ PHP</a>
-  </div>
- </div>
- <div class="w3-col l4 w3-center" style="padding:3%;">
-  <div class="w3-card-2 w3-white">
-   <h2 class="w3-xxlarge">jQuery</h2>
-   <h4 class="w3-text-dark-grey">ไลบรารี JavaScript สำหรับการพัฒนาเว็บเพจ</h4>
-   <a href="jquery/default.html" class="w3-button w3-dark-grey">เรียนรู้ JQUERY</a>
-  </div>
- </div>
-</div>
-<div class="w3-row">
- <div class="w3-col l4 w3-center" style="padding:3%;">
-  <h2 class="w3-xxlarge">IT.CSS</h2>
-  <h4 class="w3-text-dark-grey">เฟรมเวิร์ก CSS ที่ทันสมัยสำหรับเว็บไซต์ที่ตอบสนองได้เร็วและดีขึ้น</h4>
-  <a href="w3css/default.html" class="w3-button w3-dark-grey">เรียนรู้ IT.CSS</a>
- </div>
- <div class="w3-col l4 w3-center" style="padding:3%;">
-  <h2 class="w3-xxlarge">ตัวเลือกสี</h2>
-  <a href="colors/colors_picker.html" class="w3-hover-opacity"><img style="width:150px;height:128px;margin-top:16px;" src="images/colorpicker.png" alt="Colorpicker"></a>
- </div>
- <div class="w3-col l4 w3-center" style="padding:3%;">
-  <h2 class="w3-xxlarge">Bootstrap</h2>
-  <h4 class="w3-text-dark-grey">Bootstrap เป็นเฟรมเวิร์ก CSS สำหรับการออกแบบหน้าเว็บที่ดีขึ้น</h4>
-  <a href="bootstrap/default.html" class="w3-button w3-dark-grey">เรียนรู้ BOOTSTRAP</a>
- </div>
-</div>
-<br>
+							<div class="grid_6 omega">
+								<div class="small_slider_music owl-carousel owl-theme">
+									<div class="item clearfix">
+										<ul class="small_posts">
+											<li class="clearfix">
+												<a class="s_thumb float-shadow" href="single_post.html"><img width="70" height="70" src="images/assets/thumb1.jpg" alt="#"></a>
+												<h3><a href="single_post.html">What worst could be the worst?</a></h3>
+												<div class="meta mb"> 5 hours ago    /    <a href="single_post.html">1 comments</a> </div>
+											</li>
+											<li class="clearfix">
+												<a class="s_thumb float-shadow" href="single_post.html"><img width="70" height="70" src="images/assets/thumb2.jpg" alt="#"></a>
+												<h3><a href="single_post.html">Praesent ipsum adipiscing mi eget ipsum</a></h3>
+												<div class="meta mb"> 1 days ago    /    <a href="single_post.html">5 comments</a> </div>
+											</li>
+											<li class="clearfix">
+												<a class="s_thumb float-shadow" href="single_post.html"><img width="70" height="70" src="images/assets/thumb3.jpg" alt="#"></a>
+												<h3><a href="single_post.html">Paul Thomson on post with SoundCloud</a></h3>
+												<div class="meta mb"> 3 days ago    /    <a href="single_post.html">14 comments</a> </div>
+											</li>
+											<li class="clearfix">
+												<a class="s_thumb float-shadow" href="single_post.html"><img width="70" height="70" src="images/assets/thumb4.jpg" alt="#"></a>
+												<h3><a href="single_post.html">For the days of peace and warmth</a></h3>
+												<div class="meta mb"> 3 days ago    /    <a href="single_post.html">14 comments</a> </div>
+											</li>
+										</ul>
+									</div>
+									
+								</div><!-- /slides -->
+							</div><!-- grid6 omega -->
+						</div><!-- posts block Music -->
 
-<div class="w3-light-grey w3-center w3-padding-large w3-padding-32">
-  <h2 class="w3-xxlarge">เทมเพลตเว็บ</h2>
-  <h4 class="w3-text-dark-grey">เรียกดูตัวเลือกของเรา <strong>ฟรี</strong> เทมเพลต HTML ที่ตอบสนอง</h4>
-  <div class="w3-content">
-    <a href="w3css/w3css_templates.html"><img src="w3css_templates.jpg" style="width:100%;margin:16px 0 20px 0" alt="W3.CSS Templates"></a>
-  </div>
-  <p><a href="w3css/w3css_templates.html" class="w3-button w3-dark-grey w3-padding-large">เรียกดูเทมเพลต</a></p>
-</div>
-<br>
+						<div class="posts_block mbf clearfix">
+							<div class="title color6">
+								<h4>TV</h4>
+								<a href="#" class="feed toptip" title="RSS Feed"><i class="icon-feed"></i></a>
+							</div>
 
-<div class="w3-white w3-center w3-padding-large w3-padding-16" style="padding-bottom:36px!important">
-  <h2 class="w3-xxlarge">วิธีการมาตรา</h2>
-  <h4 class="w3-text-dark-grey">ข้อมูลโค้ดสำหรับ HTML, CSS และ JavaScript</h4>
-  <div class="w3-content w3-hide-device">
-    <div class="w3-row-padding" style="margin:32px -16px">
-      <div class="w3-col l6 s12">
-        <iframe src="howto/tryhow_css_sidenav_ifr.html" style="width:100%;border:5px solid #ddd;height:300px"></iframe>
-      </div>
-      <div class="w3-col l6 w3-hide-small w3-hide-medium">
-        <iframe src="howto/tryhow_css_sidenav_ifr2.html" style="width:100%;border:5px solid #ddd;height:300px"></iframe>
-      </div>
-    </div>
-  </div>
-  <p><a href="howto/default.html" class="w3-button w3-dark-grey w3-padding-large">เรียนรู้วิธีการ</a></p>
-</div>
+							<div class="carousel_TV">
+								<div class="item float-shadow"><a href="#"><img class="toptip" src="images/assets/r_7.jpg" alt="#" title="Lorem Ipsum is not simply"></a></div>
+								<div class="item float-shadow"><a href="#"><img class="toptip" src="images/assets/r_8.jpg" alt="#" title="Shooting for new goodies"></a></div>
+								<div class="item float-shadow"><a href="#"><img class="toptip" src="images/assets/r_9.jpg" alt="#" title="For the days of peace and warmth"></a></div>
+								<div class="item float-shadow"><a href="#"><img class="toptip" src="images/assets/r_10.jpg" alt="#" title="A picture of Sin Fang in Bairro Alto"></a></div>
+								<div class="item float-shadow"><a href="#"><img class="toptip" src="images/assets/r_11.jpg" alt="#" title="Breaking the darkness"></a></div>
+								<div class="item float-shadow"><a href="#"><img class="toptip" src="images/assets/r_12.jpg" alt="#" title="For the days of peace and warmth"></a></div>
+								<div class="item float-shadow"><a href="#"><img class="toptip" src="images/assets/r_13.jpg" alt="#" title="Bairro Alto in Lisboa, Portugal"></a></div>
+							</div>
+						</div><!-- posts block carousel -->
 
-<div class="w3-display-container w3-black" id="certsection">
-  <a href="cert/default.html">
-    <img src="getcertified.jpg" style="max-width:100%;margin:auto;display:block" alt="W3 Certificates">
-    <div class="certoverlay">
-    <br class="w3-hide-small w3-hide-medium">
-      <h2>ใบรับรองเว็บ</h2><h3>รับการรับรองใน HTML, CSS และ JavaScript</h3>
-    </div>
-  </a>
-  <p class="w3-display-middle getcert"><a href="cert/default.html" class="w3-button w3-green w3-hover-white w3-padding-large" style="font-size:17px">Get Certified &raquo;</a></p>
-</div>
+						<div class="ads_block mbf">
+							<a href=""><img src="images/ads3.png" alt=""></a>
+						</div><!-- ads block -->
 
-<footer class="w3-container w3-dark-grey w3-center w3-padding-32">
- <div class="w3-container w3-padding-32">
-   <a class="w3-button w3-light-grey w3-hide-small w3-hide-medium w3-left" href="cert/default.html" style="font-size:16px;margin-top:-9px">ใบรับรองเว็บ</a>
-   <a class="w3-button w3-light-grey w3-hide-small w3-hide-medium w3-left" href="quiztest/quiztest103d.html?Qtest=HTML" style="font-size:16px;margin-top:-9px;margin-left:12px">แบบทดสอบ</a>
-   <a class="w3-button w3-light-grey w3-hide-small w3-hide-medium w3-left" target="_blank" href="html/exercise8ec8.html?filename=exercise_attributes1" style="font-size:16px;margin-top:-9px;margin-left:12px">การออกกำลังกาย</a>
-   <a class="w3-button w3-light-grey w3-hide-large" href="cert/default.html" style="font-size:16px;margin-bottom:16px">ใบรับรอง</a>
-   <a class="w3-button w3-light-grey w3-hide-large" href="quiztest/quiztest103d.html?Qtest=HTML" style="font-size:16px;margin-bottom:16px;">แบบทดสอบ</a>
-   <a class="w3-button w3-light-grey w3-hide-large" target="_blank" href="html/exercise8ec8.html?filename=exercise_attributes1" style="font-size:16px;margin-bottom:16px;">การออกกำลังกาย</a>
-   <nav class="w3-right w3-hide-medium w3-hide-small w3-wide">
-    <a href="http://thaiit.html-5.me/" target="_blank" class="w3-hover-text-green" style="text-decoration:none">เว็บบอร์ด</a> |
-    <a href="about/default.html" target="_top" class="w3-hover-text-green" style="text-decoration:none">เกี่ยวกับเรา</a>
-   </nav>
-   <nav class="w3-center w3-hide-large w3-margin-top w3-wide">
-    <a href="http://thaiit.html-5.me/" target="_blank" class="w3-hover-text-green" style="text-decoration:none">เว็บบอร์ด</a> |
-    <a href="about/default.html" target="_top" class="w3-hover-text-green" style="text-decoration:none">เกี่ยวกับเรา</a>
-   </nav>
- </div>
- <p class="w3-medium">
-ชุมชนคนทำเว็บ เหมาะสำหรับการเรียนรู้การทดสอบและการฝึกอบรม ตัวอย่างอาจทำให้ง่ายขึ้นเพื่อปรับปรุงการอ่านและความเข้าใจพื้นฐาน บทแนะนำการอ้างอิงและตัวอย่างจะได้รับการตรวจสอบอย่างต่อเนื่องเพื่อหลีกเลี่ยงข้อผิดพลาด แต่เราไม่สามารถรับประกันความถูกต้องทั้งหมดของ
- เนื้อหาทั้งหมด ในขณะที่ใช้ไซต์นี้คุณยินยอมที่จะได้อ่านและยอมรับ <a href="about/about_copyright.html" class="w3-hover-text-green">ข้อตกลงในการใช้งาน</a>, <a href="about/about_privacy.html" class="w3-hover-text-green">คุกกี้และนโยบายความเป็นส่วนตัว</a>.<br>
- <a href="about/about_copyright.html" class="w3-hover-text-green">ลิขสิทธิ์ @ 2020-2021</a> โดย  ชุมชนคนทำเว็บ . สงวนลิขสิทธิ์.<br><br><a href="http://thaiit.html-5.me/" target="_blank">โคลนโดย <b>ชุมชนคนไอที</b></a></p>
- <div id="fblikeframe" class="w3-modal">
-  <div class="w3-modal-content w3-padding-64 w3-animate-zoom" id="popupDIV"></div>
- </div>
-</footer>
+						<div class="posts_block mbf clearfix">
+							<div class="title color1">
+								<h4>Travel</h4>
+								<a href="#" class="feed toptip" title="RSS Feed"><i class="icon-feed"></i></a>
+							</div>
 
-<!-- END MAIN -->
-</div>
+							<div class="grid_6 alpha">
+								<div class="mb float-shadow"><a href="single_post.html"><img src="images/assets/r_6.jpg" alt=""></a></div>
+								<div class="post_m_content">
+									<h3> <a href="single_post.html">Here's What Instagram Ads Will Look Like</a> </h3>
+									<div class="meta mb"> 3 hours ago    /    <a href="single_post.html">0 comments</a> </div>
+									<p> Lorem Ipsum is simply dummy text of the printing and typesetting... </p>
+								</div><!-- post content -->
+							</div><!-- grid6 omega -->
 
-<script>
-function w3_open() {
-  var x = document.getElementById("myAccordion");
-  if (x.style.display === 'none') {
-    x.style.display = 'block';
-  } else {
-    x.style.display = 'none';
-  }
-}
-function w3_close() {
-  document.getElementById("myAccordion").style.display = "none";
-}
-function open_xs_menu(x) {
-  if (document.getElementById("sectionxs_" + x).innerHTML == "") {
-    document.getElementById("sectionxs_" + x).innerHTML = document.getElementById("nav_" + x).innerHTML;
-  } else {
-    document.getElementById("sectionxs_" + x).innerHTML = "";
-  }
-}
-function w3_open_nav(x) {
-  if (document.getElementById("nav_" + x).style.display == "block") {
-    w3_close_nav(x);
-  } else {
-    w3_close_nav("tutorials");
-    w3_close_nav("references");
-    w3_close_nav("examples");
-    document.getElementById("nav_" + x).style.display = "block";
-    if (document.getElementById("navbtn_" + x)) {
-      document.getElementById("navbtn_" + x).getElementsByTagName("i")[0].style.display = "none";
-      document.getElementById("navbtn_" + x).getElementsByTagName("i")[1].style.display = "inline";
-    } 
-    if (x == "search") {
-      if (document.getElementById("gsc-i-id1")) {document.getElementById("gsc-i-id1").focus(); }
-    }
-  }
-}
-function w3_close_nav(x) {
-  document.getElementById("nav_" + x).style.display = "none";
-  if (document.getElementById("navbtn_" + x)) {
-    document.getElementById("navbtn_" + x).getElementsByTagName("i")[0].style.display = "inline";
-    document.getElementById("navbtn_" + x).getElementsByTagName("i")[1].style.display = "none";
-  }
-}
-function open_translate(elmnt) {
-  var a = document.getElementById("google_translate_element");
-  if (a.style.display == "") {
-    a.style.display = "none";
-    elmnt.innerHTML = "<i class='fa'>&#xe801;</i>";
-  } else {
-    a.style.display = "";
-    if (window.innerWidth > 830) {
-      a.style.width = "20%";
-    } else {
-      a.style.width = "60%";
-    }
-    elmnt.innerHTML = "<span style='font-family:verdana;font-weight:bold;display:inline-block;width:21px;text-align:center;'>X</span>";
-  }
-}
-function open_search(elmnt) {
-  var a = document.getElementById("googleSearch");
-  document.getElementById("navbtn_tutorials").style.visibility = "visible";
-  if (a.style.display == "") {
-    a.style.display = "none";
-    elmnt.innerHTML = "<i class='fa'>&#xe802;</i>";    
-  } else {
-    a.style.display = "";  
-    if (window.innerWidth > 1000) {
-      a.style.width = "40%";
-    } else if (window.innerWidth >768) {
-      document.getElementById("navbtn_tutorials").style.visibility = "hidden";
-      a.style.width = "80%";    
-    } else {
-      a.style.width = "80%";
-    }
-    if (document.getElementById("gsc-i-id1")) {document.getElementById("gsc-i-id1").focus(); }
-    elmnt.innerHTML = "<span style='font-family:verdana;font-weight:bold;display:inline-block;width:23px;text-align:center;'>X</span>";
-  }
-}
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({
-  pageLanguage: 'en',
-  autoDisplay: false,    
-  gaTrack: true,
-  gaId: 'UA-3855518-1',
-  layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-  }, 'google_translate_element');
-}
-function clickFBLike() {
-  document.getElementById("fblikeframe").style.display='block';
-  document.getElementById("popupDIV").innerHTML = "<iframe src='/fblike.asp?r=" + Math.random() + "' frameborder='no' style='height:200px;width:250px;'></iframe><br><button onclick='hideFBLike()' class='w3-button w3-dark-grey w3-hover-black'>Close</button>";
-}
-function hideFBLike() {
-  document.getElementById("fblikeframe").style.display='none';
-}
-</script>
-<script src="lib/w3codecolor.js"></script>
-<script src="../translate.google.com/translate_a/elementa0d8.html?cb=googleTranslateElementInit"></script>
-<script>
-w3CodeColor();
-</script>
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
-<![endif]-->
+							<div class="grid_6 omega">
+								<div class="small_slider_travel owl-carousel owl-theme">
+									<div class="item clearfix">
+										<ul class="small_posts">
+											<li class="clearfix">
+												<a class="s_thumb float-shadow" href="single_post.html"><img width="70" height="70" src="images/assets/thumb5.jpg" alt="#"></a>
+												<h3><a href="single_post.html">What worst could be the worst?</a></h3>
+												<div class="meta mb"> 5 hours ago    /    <a href="single_post.html">1 comments</a> </div>
+											</li>
+											<li class="clearfix">
+												<a class="s_thumb float-shadow" href="single_post.html"><img width="70" height="70" src="images/assets/thumb6.jpg" alt="#"></a>
+												<h3><a href="single_post.html">Praesent ipsum adipiscing mi eget ipsum</a></h3>
+												<div class="meta mb"> 1 days ago    /    <a href="single_post.html">5 comments</a> </div>
+											</li>
+											<li class="clearfix">
+												<a class="s_thumb float-shadow" href="single_post.html"><img width="70" height="70" src="images/assets/thumb7.jpg" alt="#"></a>
+												<h3><a href="single_post.html">Paul Thomson on post with SoundCloud</a></h3>
+												<div class="meta mb"> 3 days ago    /    <a href="single_post.html">14 comments</a> </div>
+											</li>
+											<li class="clearfix">
+												<a class="s_thumb float-shadow" href="single_post.html"><img width="70" height="70" src="images/assets/thumb8.jpg" alt="#"></a>
+												<h3><a href="single_post.html">For the days of peace and warmth</a></h3>
+												<div class="meta mb"> 3 days ago    /    <a href="single_post.html">14 comments</a> </div>
+											</li>
+										</ul>
+									</div>
+									<div class="item clearfix">
+										<ul class="small_posts">
+											<li class="clearfix">
+												<a class="s_thumb float-shadow" href="single_post.html"><img width="70" height="70" src="images/assets/thumb11.jpg" alt="#"></a>
+												<h3><a href="single_post.html">What worst could be the worst?</a></h3>
+												<div class="meta mb"> 5 hours ago    /    <a href="single_post.html">1 comments</a> </div>
+											</li>
+											<li class="clearfix">
+												<a class="s_thumb float-shadow" href="single_post.html"><img width="70" height="70" src="images/assets/thumb12.jpg" alt="#"></a>
+												<h3><a href="single_post.html">Praesent ipsum adipiscing mi eget ipsum</a></h3>
+												<div class="meta mb"> 1 days ago    /    <a href="single_post.html">5 comments</a> </div>
+											</li>
+											<li class="clearfix">
+												<a class="s_thumb float-shadow" href="single_post.html"><img width="70" height="70" src="images/assets/thumb6.jpg" alt="#"></a>
+												<h3><a href="single_post.html">Praesent ipsum adipiscing mi eget ipsum</a></h3>
+												<div class="meta mb"> 4 days ago    /    <a href="single_post.html">5 comments</a> </div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div><!-- grid6 omega -->
+						</div><!-- posts block Travel -->
 
+						<div class="posts_block mbf clearfix">
+							<div class="title color3">
+								<h4>People</h4>
+								<a href="#" class="feed toptip" title="People RSS Feed"><i class="icon-feed"></i></a>
+							</div>
 
-<script>
-clickColor(colorObj.toHexString());
-</script>
+							<div class="grid_6 alpha">
+								<div class="mb float-shadow"><a href="single_post.html"><img src="images/assets/r_11.jpg" alt=""></a></div>
+								<div class="post_m_content">
+									<h3> <a href="single_post.html">Here's What Instagram Ads Will Look Like</a> </h3>
+									<div class="meta mb"> 3 hours ago    /    <a href="single_post.html">0 comments</a> </div>
+									<p> Lorem Ipsum is simply dummy text of the printing and typesetting... </p>
+								</div><!-- post content -->
+							</div><!-- grid6 omega -->
+
+							<div class="grid_6 omega">
+								<div class="small_slider_travel owl-carousel owl-theme">
+									<div class="item clearfix">
+										<ul class="small_posts">
+											<li class="clearfix">
+												<a class="s_thumb float-shadow" href="single_post.html"><img width="70" height="70" src="images/assets/thumb2.jpg" alt="#"></a>
+												<h3><a href="single_post.html">What worst could be the worst?</a></h3>
+												<div class="meta mb"> 5 hours ago    /    <a href="single_post.html">1 comments</a> </div>
+											</li>
+											<li class="clearfix">
+												<a class="s_thumb float-shadow" href="single_post.html"><img width="70" height="70" src="images/assets/thumb8.jpg" alt="#"></a>
+												<h3><a href="single_post.html">Praesent ipsum adipiscing mi eget ipsum</a></h3>
+												<div class="meta mb"> 1 days ago    /    <a href="single_post.html">5 comments</a> </div>
+											</li>
+											<li class="clearfix">
+												<a class="s_thumb float-shadow" href="single_post.html"><img width="70" height="70" src="images/assets/thumb1.jpg" alt="#"></a>
+												<h3><a href="single_post.html">Paul Thomson on post with SoundCloud</a></h3>
+												<div class="meta mb"> 3 days ago    /    <a href="single_post.html">14 comments</a> </div>
+											</li>
+											<li class="clearfix">
+												<a class="s_thumb float-shadow" href="single_post.html"><img width="70" height="70" src="images/assets/thumb10.jpg" alt="#"></a>
+												<h3><a href="single_post.html">For the days of peace and warmth</a></h3>
+												<div class="meta mb"> 3 days ago    /    <a href="single_post.html">14 comments</a> </div>
+											</li>
+										</ul>
+									</div>
+									<div class="item clearfix">
+										<ul class="small_posts">
+											<li class="clearfix">
+												<a class="s_thumb float-shadow" href="single_post.html"><img width="70" height="70" src="images/assets/thumb4.jpg" alt="#"></a>
+												<h3><a href="single_post.html">What worst could be the worst?</a></h3>
+												<div class="meta mb"> 5 hours ago    /    <a href="single_post.html">1 comments</a> </div>
+											</li>
+											<li class="clearfix">
+												<a class="s_thumb float-shadow" href="single_post.html"><img width="70" height="70" src="images/assets/thumb3.jpg" alt="#"></a>
+												<h3><a href="single_post.html">Praesent ipsum adipiscing mi eget ipsum</a></h3>
+												<div class="meta mb"> 1 days ago    /    <a href="single_post.html">5 comments</a> </div>
+											</li>
+											<li class="clearfix">
+												<a class="s_thumb float-shadow" href="single_post.html"><img width="70" height="70" src="images/assets/thumb9.jpg" alt="#"></a>
+												<h3><a href="single_post.html">Praesent ipsum adipiscing mi eget ipsum</a></h3>
+												<div class="meta mb"> 4 days ago    /    <a href="single_post.html">5 comments</a> </div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div><!-- grid6 omega -->
+						</div><!-- posts block People -->
+
+					</div><!-- end grid9 -->
+
+					<div class="grid_4 alpha sidebar sidebar_b">
+						<div class="widget">
+							<div class="title"><h4>New Video</h4></div>
+							<iframe src="http://player.vimeo.com/video/13897659?color=E84A4A" height="180"></iframe><a href="http://vimeo.com/13897659">Iconic Poster design</a>
+						</div><!-- widget -->
+
+						<div class="widget">
+							<div id="calendar_wrap"><table id="wp-calendar">
+								<caption>January 2014</caption>
+									<thead>
+										<tr>
+											<th scope="col" title="Monday">M</th>
+											<th scope="col" title="Tuesday">T</th>
+											<th scope="col" title="Wednesday">W</th>
+											<th scope="col" title="Thursday">T</th>
+											<th scope="col" title="Friday">F</th>
+											<th scope="col" title="Saturday">S</th>
+											<th scope="col" title="Sunday">S</th>
+										</tr>
+									</thead>
+							
+									<tfoot>
+										<tr>
+											<td colspan="3" id="prev"><a href="#" title="View posts for December 2013">« Dec</a></td>
+											<td class="pad">&nbsp;</td>
+											<td colspan="3" id="next" class="pad">&nbsp;</td>
+										</tr>
+									</tfoot>
+							
+									<tbody>
+										<tr><td colspan="2" class="pad">&nbsp;</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+										<tr><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td></tr>
+										<tr><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td id="today">18</td><td>19</td></tr>
+										<tr><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td></tr>
+										<tr><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td class="pad" colspan="2">&nbsp;</td></tr>
+									</tbody>
+								</table>
+							</div>
+						</div><!-- widget -->
+
+						<div class="widget">
+							<div class="title"><h4>Random Posts</h4></div>
+							<div class="relative float-shadow mb">
+								<a href="single_post.html"><img src="images/assets/r_1.jpg" alt=""></a>
+								<div class="r_content">
+									<a class="cat color5" href="#" title="View all posts under Music">Music</a>
+									<div class="r_title"><a href="single_post.html">At vero eos et accusamus et iusto</a></div>
+								</div>
+							</div><!-- relative -->
+
+							<div class="relative float-shadow mb">
+								<a href="single_post.html"><img src="images/assets/r_2.jpg" alt=""></a>
+								<div class="r_content">
+									<a class="cat color6" href="#" title="View all posts under TV">TV</a>
+									<div class="r_title"><a href="single_post.html">A picture of Sin Fang in Bairro Alto</a></div>
+								</div>
+							</div><!-- relative -->
+
+							<div class="relative float-shadow mb">
+								<a href="single_post.html"><img src="images/assets/r_3.jpg" alt=""></a>
+								<div class="r_content">
+									<a class="cat color2" href="#" title="View all posts under Travel">Travel</a>
+									<div class="r_title"><a href="single_post.html">Bairro Alto in Lisboa, Portugal</a></div>
+								</div>
+							</div><!-- relative -->
+						</div><!-- widget -->
+
+						<div class="widget">
+							<div class="title"><h4>Popular Tags</h4></div>
+							<div class="tags">
+								<a href="#" title="17 topic"> corporate </a>
+								<a href="#" title="44 topic"> theme </a>
+								<a href="#" title="10 topic"> css3 </a>
+								<a href="#" title="2 topic"> premium </a>
+								<a href="#" title="29 topic"> html5 </a>
+								<a href="#" title="4 topic"> business </a>
+								<a href="#" title="20 topic"> all purpose </a>
+								<a href="#" title="14 topic"> jquery </a>
+								<a href="#" title="1 topic"> muse template </a>
+								<a href="#" title="4 topic"> minimalist </a>
+							</div>
+						</div><!-- widget -->
+
+						<div class="widget">
+							<div class="title"><h4>Like Us</h4></div>
+							<div class="bg_light"><iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fenvato&amp;width=313&amp;height=300&amp;show_faces=true&amp;colorscheme=light&amp;stream=false&amp;border_color&amp;header=true&amp;appId=138798126277575" height="292"></iframe></div>
+						</div><!-- widget -->
+
+					</div><!-- end grid9 -->
+				</div><!-- end grid9 -->
+
+				<div class="grid_3 omega sidebar sidebar_a">
+					<div class="widget">
+						<ul class="counter clearfix">
+							<li class="twitter">
+								<a href="#"><i class="fa fa-twitter"></i></a>
+								<span> 2545 <br> Followes </span>
+							</li>
+							<li class="facebook">
+								<a href="#"><i class="fa fa-facebook"></i></a>
+								<span> 1317 <br> Likes </span>
+							</li>
+							<li class="dribbble">
+								<a href="#"><i class="fa fa-dribbble"></i></a>
+								<span> 325 <br> Followes </span>
+							</li>
+							<li class="rss">
+								<a href="#"><i class="fa fa-rss"></i></a>
+								<span> 27 <br> Subscribers </span>
+							</li>
+						</ul>
+					</div><!-- widget -->
+
+					<div class="widget">
+						<div class="ads_widget clearfix">
+							<a href="#"><img src="images/ads2.jpg" alt="#"></a>
+							<a href="#" class="lefter mt"><img src="images/ads3.jpg" alt="#"></a>
+							<a href="#" class="righter mt"><img src="images/ads3.jpg" alt="#"></a>
+						</div><!-- widget -->
+					</div><!-- widget -->
+
+					<div class="widget">
+						<div class="title"><h4>What's Hot</h4></div>
+
+							<div class="small_slider_hots owl-carousel owl-theme">
+								
+
+									<ul class="small_posts">
+										<li class="clearfix">
+											<a class="s_thumb float-shadow" href="single_post.html"><img width="70" height="70" src="images/assets/thumb9.jpg" alt="#"><span>5</span></a>
+											<h3><a href="single_post.html">What worst could be the worst?</a></h3>
+											<div class="meta mb"> <a class="cat color6" href="#" title="View all posts under People">People</a><span class="post_rating" href="#" title="Rating">7</span> </div>
+										</li>
+										<li class="clearfix">
+											<a class="s_thumb float-shadow" href="single_post.html"><img width="70" height="70" src="images/assets/thumb8.jpg" alt="#"><span>6</span></a>
+											<h3><a href="single_post.html">Praesent ipsum adipiscing mi eget ipsum</a></h3>
+											<div class="meta mb"> <a class="cat color7" href="#" title="View all posts under TV">TV</a><span class="post_rating" href="#" title="Rating">5.89</span> </div>
+										</li>
+										<li class="clearfix">
+											<a class="s_thumb float-shadow" href="single_post.html"><img width="70" height="70" src="images/assets/thumb7.jpg" alt="#"><span>7</span></a>
+											<h3><a href="single_post.html">Paul Thomson on post with SoundCloud</a></h3>
+											<div class="meta mb"> <a class="cat color8" href="#" title="View all posts under Society">Society</a><span class="post_rating" href="#" title="Rating">5.5</span> </div>
+										</li>
+										<li class="clearfix">
+											<a class="s_thumb float-shadow" href="single_post.html"><img width="70" height="70" src="images/assets/thumb6.jpg" alt="#"><span>8</span></a>
+											<h3><a href="single_post.html">For the days of peace and warmth</a></h3>
+											<div class="meta mb"> <a class="cat color3" href="#" title="View all posts under Health">Health</a><span class="post_rating" href="#" title="Rating">4</span> </div>
+										</li>
+									</ul>
+								
+							</div><!-- /slides -->
+					</div><!-- /widget -->
+
+					<div class="widget">
+						<div class="latest_tweets">
+							<h4> <i class="fa fa-twitter"></i>  @iPress <small> tweets </small> </h4>
+							<div class="tweets">
+								<div class="tweets_slider owl-carousel owl-theme">
+									<div class="item clearfix">
+										Singolo is a free PSD template of a flat, single page website created by @T20 #freebie #psd <a href="#">http://bit.ly/19XM8Lj</a> <br><br>
+										2 hours ago  
+									</div><!-- /slide -->
+									<div class="item clearfix">
+										Singolo is a free PSD template of a flat, single page website created by @T20 #freebie #psd <a href="#">http://bit.ly/19XM8Lj</a> <br><br>
+										1 day ago  
+									</div><!-- /slide -->
+									<div class="item clearfix">
+										Singolo is a free PSD template of a flat, single page website created by @T20 #freebie #psd <a href="#">http://bit.ly/19XM8Lj</a> <br><br>
+										5 days ago  
+									</div><!-- /slide -->
+								</div><!-- /tweets slider -->
+							</div><!-- /tweets -->
+						</div><!-- /latest tweets -->
+					</div><!-- /widget -->
+
+					<div class="widget">
+						<div class="title"><h4>Polls</h4></div>
+						<div class="wp-polls">
+							<form class="wp-polls-form" action="#" method="post">
+								<p class="tac"><strong>What do you think about our website?</strong></p>
+								<div class="wp-polls-ans">
+									<ul class="wp-polls-ul">
+										<li><input type="radio" name="poll_2" value="6"> <label for="poll-answer-6">Awesome</label></li>
+										<li><input type="radio" name="poll_2" value="7"> <label for="poll-answer-7">Super</label></li>
+										<li><input type="radio" name="poll_2" value="8"> <label for="poll-answer-8">Normal</label></li>
+										<li><input type="radio" name="poll_2" value="9"> <label for="poll-answer-9">Bad</label></li>
+									</ul>
+							
+									<input type="button" name="vote" value="   Vote   " class="Buttons">
+									<input type="button" name="results" value="   View Results   " class="Buttons">
+								</div>
+							</form>
+						</div>
+					</div><!-- widget -->
+
+					<div class="widget">
+						<div class="title"><h4>Recent Comments</h4></div>
+						<ul class="recent_comments small_posts">
+							<li class="clearfix">
+								<a class="s_thumb float-shadow" href="single_post.html"><img width="80" height="80" src="images/assets/avatar1.jpg" alt="#"></a>
+								<h5><a href="#">Alex Cohn</a>:</h5>
+								<p>Lorem Ipsum is simply dummy text of the printing...</p>
+							</li>
+							<li class="clearfix">
+								<a class="s_thumb float-shadow" href="single_post.html"><img width="80" height="80" src="images/assets/avatar2.jpg" alt="#"></a>
+								<h5><a href="#">Michele</a>:</h5>
+								<p>Here's What Instagram Ads Will Look Like...</p>
+							</li>
+							<li class="clearfix">
+								<a class="s_thumb float-shadow" href="single_post.html"><img width="80" height="80" src="images/assets/avatar3.jpg" alt="#"></a>
+								<h5><a href="#">Admin</a>:</h5>
+								<p>Lorem ipsum is dolor sit amet text of the ipsum...</p>
+							</li>
+							<li class="clearfix">
+								<a class="s_thumb float-shadow" href="single_post.html"><img width="80" height="80" src="images/assets/avatar4.jpg" alt="#"></a>
+								<h5><a href="#">Tomas Giggs</a>:</h5>
+								<p>Lorem Ipsum is simply dummy text of the printing...</p>
+							</li>
+						</ul>
+					</div><!-- /widget -->
+
+				</div><!-- /grid3 sidebar A -->
+			</div><!-- /row -->
+		</div><!-- /end page content -->
+
+		<footer id="footer">
+			<div class="row clearfix">
+				<div class="grid_3">
+					<div class="widget">
+						<div class="title"><h4>About iPress</h4></div>
+						<p> iPress is a magazine/blog/ad/review template. Nunc montes odio phasellus dignissim, aenean, nec augue velit integer elementum ut montes quis integer cursus, est purus, lectus duis, scelerisque tincidunt ultricies phasellus elementum turpis tristique.<br><br>
+
+Email:	<a href="contact.html">information@ipress.com</a> </p>
+					</div><!-- /widget -->
+				</div><!-- /grid3 -->
+
+				<div class="grid_3">
+					<div class="widget">
+						<div class="title"><h4>Recent Posts</h4></div>
+						<ul class="small_posts">
+							<li class="clearfix">
+								<a class="s_thumb float-shadow" href="single_post.html"><img width="70" height="70" src="images/assets/thumb4.jpg" alt="#"></a>
+								<h3><a href="single_post.html">What is the worst could be the worst?</a></h3>
+								<div class="meta mb"> 1 day ago  /  <a href="single_post.html">1 comment</a> </div>
+							</li>
+							<li class="clearfix">
+								<a class="s_thumb float-shadow" href="single_post.html"><img width="70" height="70" src="images/assets/thumb5.jpg" alt="#"></a>
+								<h3><a href="single_post.html">Praesent ipsum adipiscing mi eget ipsum</a></h3>
+								<div class="meta mb"> 3 days ago  /  <a href="single_post.html">3 comments</a> </div>
+							</li>
+							<li class="clearfix">
+								<a class="s_thumb float-shadow" href="single_post.html"><img width="70" height="70" src="images/assets/thumb6.jpg" alt="#"></a>
+								<h3><a href="single_post.html">Paul Thomson on post with SoundCloud</a></h3>
+								<div class="meta mb"> 6 days ago  /  <a href="single_post.html">5 comments</a> </div>
+							</li>
+						</ul>
+					</div><!-- /widget -->
+				</div><!-- /grid3 -->
+
+				<div class="grid_3">
+					<div class="widget">
+						<div class="title"><h4>Best Reviews</h4></div>
+						<ul class="small_posts">
+							<li class="clearfix">
+								<a class="s_thumb float-shadow" href="single_post.html"><img width="70" height="70" src="images/assets/thumb13.jpg" alt="#"></a>
+								<h3><a href="single_post.html">What is the worst could be the worst?</a></h3>
+								<div class="meta mb"> <a class="cat color1" href="#" title="View all posts under Entertainment">Entertainment</a><span class="post_rating" href="#" title="Rating">8.89</span> </div>
+							</li>
+							<li class="clearfix">
+								<a class="s_thumb float-shadow" href="single_post.html"><img width="70" height="70" src="images/assets/thumb12.jpg" alt="#"></a>
+								<h3><a href="single_post.html">Praesent ipsum adipiscing mi eget ipsum</a></h3>
+								<div class="meta mb"> <a class="cat color3" href="#" title="View all posts under News">News</a><span class="post_rating" href="#" title="Rating">8.1</span> </div>
+							</li>
+							<li class="clearfix">
+								<a class="s_thumb float-shadow" href="single_post.html"><img width="70" height="70" src="images/assets/thumb11.jpg" alt="#"></a>
+								<h3><a href="single_post.html">Paul Thomson on post with SoundCloud</a></h3>
+								<div class="meta mb"> <a class="cat color4" href="#" title="View all posts under Sports">Sports</a><span class="post_rating" href="#" title="Rating">7.95</span> </div>
+							</li>
+						</ul>
+					</div><!-- /widget -->
+				</div><!-- /grid3 -->
+
+				<div class="grid_3">
+					<div class="widget">
+						<div class="title"><h4>Newsletters</h4></div>
+						<p> To receive the latest updates and Latest Posts enter your email. </p>
+						<form id="newsletters" method="post" action="http://feedburner.google.com/fb/a/mailverify" target="popupwindow" onSubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=sevenpsd', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+							<input type="email" onFocus="if (this.value=='Type Your Email') this.value = '';" onBlur="if (this.value=='') this.value = 'Type Your Email';" value="Type Your Email" placeholder="Type Your Email" required="required">
+							<button type="submit"><i class="icon-checkmark"></i></button>
+						</form>
+					</div><!-- /widget -->
+
+					<div class="widget">
+						<div class="title"><h4>Follow us</h4></div>
+						<div class="social">
+							<a href="#" class="toptip" title="Twitter"><i class="fa-twitter"></i></a>
+							<a href="#" class="toptip" title="Facebook"><i class="fa-facebook"></i></a>
+							<a href="#" class="toptip" title="Google Plus"><i class="fa-google-plus"></i></a>
+							<a href="#" class="toptip" title="Linkedin"><i class="fa-linkedin"></i></a>
+							<a href="#" class="toptip" title="Github"><i class="fa-github"></i></a>
+							<a href="#" class="toptip" title="instagram"><i class="fa-instagram"></i></a>
+							<a href="#" class="toptip" title="Dribbble"><i class="fa-dribbble"></i></a>
+						</div><!-- /social -->
+					</div><!-- /widget -->
+				</div><!-- /grid3 -->
+
+			</div><!-- /row -->
+
+			<div class="row clearfix">
+				<div class="footer_last">
+					<span class="copyright">© 2014 <a href="http://theme20.com/">Theme20</a>. All Rights Reserved. Powered by <a href="http://themeforest.net/user/T20">Themeforest</a>.</span>
+
+					<div id="toTop" class="toptip" title="Back to Top"><i class="icon-arrow-thin-up"></i></div>
+				</div><!-- /last footer -->
+			</div><!-- /row -->
+
+		</footer><!-- /footer -->
+
+	</div><!-- /layout -->
+
+	<!-- Scripts -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/ipress.js"></script>
+		<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+		<script type="text/javascript" src="js/jquery.ticker.js"></script>
+		<script type="text/javascript" src="js/custom.js"></script>
+		<script type="text/javascript">
+		/* <![CDATA[ */
+			function date_time(id){
+				date = new Date;
+				year = date.getFullYear();
+				month = date.getMonth();
+				months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'Jully', 'August', 'September', 'October', 'November', 'December');
+				d = date.getDate();
+				day = date.getDay();
+				days = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
+				h = date.getHours();
+				if(h<10){
+					h = "0"+h;}
+					m = date.getMinutes();
+					if(m<10){
+						m = "0"+m;
+					}
+					s = date.getSeconds();
+					if(s<10){
+						s = "0"+s;
+					}
+				// result = ''+days[day]+' '+months[month]+' '+d+' '+year+' '+h+':'+m+':'+s;
+				result = ''+days[day]+' '+d+' '+months[month]+' '+year;
+				document.getElementById(id).innerHTML = result;
+				setTimeout('date_time("'+id+'");','1000');
+				return true;
+			}
+			window.onload = date_time('date_time');
+		/* ]]> */
+		</script>
 </body>
-
-<!-- Mirrored from www.w3schools.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Jul 2018 21:23:10 GMT -->
 </html>
