@@ -1,144 +1,123 @@
-<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<!doctype html>
+<html lang="en">
 
 <head>
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <title>ชุมชนคนทำเว็บ HTML Template</title>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>ชุมชนคนทำเว็บ</title>
-    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Simplest is - Professional A unique and beautiful collection of UI elements">
+    <link rel="icon" href="assets/images/favicon.png">
 
-    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/prism/prism.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
+    <!-- CSS 
+    ================================================== -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/uikit.css">
+   
+
+    <!-- icons
+    ================================================== -->
+    <link rel="stylesheet" href="assets/css/icons.css">
+    <script src="https://kit.fontawesome.com/815e388c50.js" crossorigin="anonymous"></script>
+
+    <!-- Google font
+    ================================================== -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
 </head>
-<body data-spy="scroll" data-target="#mainScrollspy">
-<div class="page-wrapper toggled light-theme">
-    <div class="container-fluid">
-        <div class="row">
-            <header class="navbar navbar-expand navbar-dark bd-navbar">
-                <div class="col-12">
-                    <div class="row">
-                        <div class="col-12">
-                            <img src="assets/img/logo.png" class="logo" align="varient">
-                            <a href="https://shopth.github.io/" target="_blank" class="visit-link">กลับหน้าหลักเว็บ</a>
-                        </div>
-                    </div>
 
+<body class="bg-white">
+
+
+
+    <!-- Content
+    ================================================== -->
+    <div uk-height-viewport class="uk-flex uk-flex-middle">
+        <div class="uk-width-2-3@m uk-width-1-2@s m-auto rounded uk-overflow-hidden shadow-lg">
+            <div class="uk-child-width-1-2@m uk-grid-collapse bg-gradient-primary" uk-grid>
+
+                <!-- column one -->
+                <div class="uk-margin-auto-vertical uk-text-center uk-animation-scale-up p-3 uk-light">
+                    <img src="i/kisspng.png" alt="">
+                    <h3 class="mb-3 mt-lg-4"> ชุมชนคนทำเว็บ</h3>
+                    <p>แบ่งปันช่วงเวลาใหม่ ๆ และชีวิตกับเพื่อนของคุณ </p>
                 </div>
 
-            </header>
-        </div>
-    </div>
-
-    <div class="container-fluid">
-        <div class="row">
-            <nav id="sidebar" class="sidebar-wrapper">
-                <div class="sidebar-content">
-                    <!-- sidebar-menu  -->
-                    <div class="sidebar-item sidebar-menu">
-                        <div id="mainScrollspy">
-                            <p><strong>เมนูนำทาง</strong></p>
-                            <nav class="nav nav-pills flex-column">
-                                <a class="nav-link active" href="#getting_started">หน้าหลัก</a>
-                                <a class="nav-link" target="_blank"href="browser/">browser</a>
-                                <a class="nav-link" target="_blank"href="#files">Files</a>
-                                <a class="nav-link" href="#installation">Installation</a>
-                                <a class="nav-link" href="#ssl_htaccess">SSL & .htaccess</a>
-                                <a class="nav-link" href="#file_upload">File Upload Settings</a>
-                                <a class="nav-link" href="#quick_start">Quick Start</a>
-                                <a class="nav-link" href="#admin">Admin Panel</a>
-                                <a class="nav-link" href="#navigation">Navigation</a>
-                                <a class="nav-link" href="#themes">Themes</a>
-                                <a class="nav-link" href="#pages">Pages</a>
-                                <a class="nav-link" href="#add_post">Add Post</a>
-                                <a class="nav-link" href="#bulk_post_upload">Bulk Post Upload</a>
-                                <a class="nav-link" href="#posts">Posts</a>
-                                <a class="nav-link" href="#rss_feeds">RSS Feeds</a>
-                                <a class="nav-link" href="#categories">Categories</a>
-                                <a class="nav-link" href="#widgets">Widgets</a>
-                                <a class="nav-link" href="#polls">Polls</a>
-                                <a class="nav-link" href="#gallery">Gallery</a>
-                                <a class="nav-link" href="#contact">Contact Messages</a>
-                                <a class="nav-link" href="#comments">Comments</a>
-                                <a class="nav-link" href="#newsletter">Newsletter</a>
-                                <a class="nav-link" href="#reward_system">Reward System</a>
-                                <a class="nav-link" href="#ads">Ad Spaces</a>
-                                <a class="nav-link" href="#users">Users</a>
-                                <a class="nav-link" href="#password_reset">Password Reset</a>
-                                <a class="nav-link" href="#roles_permissions">Roles & Permissions</a>
-                                <a class="nav-link" href="#seo">Seo Tools</a>
-                                <a class="nav-link" href="#social_login">Social Login Configuration</a>
-                                <a class="nav-link" href="#cache">Cache System</a>
-                                <a class="nav-link" href="#cron_job">Cron Job</a>
-                                <a class="nav-link" href="#preferences">Preferences</a>
-                                <a class="nav-link" href="#pwa">Progressive Web Apps (PWA)</a>
-                                <a class="nav-link" href="#route_settings">Route Settings</a>
-                                <a class="nav-link" href="#email_settings">Email Settings</a>
-                                <a class="nav-link" href="#visual_settings">Visual Settings</a>
-                                <a class="nav-link" href="#font_settings">Font Settings</a>
-                                <a class="nav-link" href="#language_settings">Language Settings</a>
-                                <a class="nav-link" href="#general_settings">General Settings</a>
-                                <a class="nav-link" href="#editing_script_codes">Editing Script Codes</a>
-                                <a class="nav-link" href="#update">Update Guide</a>
-                            </nav>
-                        </div>
+                <!-- column two -->
+                <div class="uk-card-default px-5 py-8">
+                    <div class="mb-4 uk-text-center">
+                        <h2 class="mb-0"> ยินดีต้อนรับกลับ</h3>
+                        <p class="my-2">เข้าสู่ระบบเพื่อจัดการบัญชีของคุณ</p>
                     </div>
-                    <!-- sidebar-menu  -->
-                </div>
-            </nav>
-            <!-- page-content  -->
-            <main class="page-content">
-                <div class="container-fluid">
-                    <div class="row row-main">
-                        <div id="getting_started" class="item-content">
-                            <div class="content-inner">
-                                <h1 class="main-title">Varient - News & Magazine Script&nbsp;<span>v1.8</span></h1>
-                                <h2 class="sub-main-title">by Codingest</h2>
-                                <h3 class="title">Getting Started</h3>
-                                <p class="prepend-top append-0">Thank you for purchasing our script. If you have any questions that are beyond the scope of this help file, please feel free to contact us via
-                                    our <strong><a href="https://codingest.net/" target="_blank">support system</a></strong>. This is an online support system for Varient. You can create your free
-                                    account and use the system. Thanks so much!</p>
+                    <form>
+
+                        <div class="uk-form-group">
+                            <label class="uk-form-label"> อีเมล์</label>
+
+                            <div class="uk-position-relative w-100">
+                                <span class="uk-form-icon">
+                                    <i class="icon-feather-mail"></i>
+                                </span>
+                                <input class="uk-input" type="email" placeholder="name@example.com">
+                            </div>
+
+                        </div>
+
+                        <div class="uk-form-group">
+                            <label class="uk-form-label"> รหัสผ่าน</label>
+
+                            <div class="uk-position-relative w-100">
+                                <span class="uk-form-icon">
+                                    <i class="icon-feather-lock"></i>
+                                </span>
+                                <input class="uk-input" type="password" placeholder="********">
+                            </div>
+
+                        </div>
+
+                        <div class="uk-form-group">
+                            <label class="uk-form-label"> ยืนยันรหัสผ่าน</label>
+
+                            <div class="uk-position-relative w-100">
+                                <span class="uk-form-icon">
+                                    <i class="icon-feather-lock"></i>
+                                </span>
+                                <input class="uk-input" type="password" placeholder="********">
+                            </div>
+
+                        </div>
+
+                        <div class="mt-4 uk-flex-middle uk-grid-small" uk-grid>
+                            <div class="uk-width-expand@s">
+                                <p>ไม่มีบัญชี <a href="form-singup.html">สร้างบัญชีใหม่</a></p>
+                            </div>
+                            <div class="uk-width-auto@s">
+                                <button type="submit" class="button primary">เข้าสู่ระบบ</button>
                             </div>
                         </div>
 
-                      
-                                </div>
-                            </div>
-                        </div>
+                    </form>
+                </div><!--  End column two -->
 
-                    </div>
-
-                </div>
-            </main>
-            <!-- page-content" -->
+            </div>
         </div>
     </div>
 
-</div>
-<!-- page-wrapper -->
+    <!-- Content -End
+    ================================================== -->
 
 
-<script src="assets/js/jquery-3.3.1.min.js"></script>
-<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="assets/bootstrap/js/popper.min.js"></script>
-<script src="assets/prism/prism.js"></script>
-<script>
-    $(document).ready(function () {
-        $('body').scrollspy({target: "#mainScrollspy", offset: 50});
-        $("#mainScrollspy a").on('click', function (event) {
-            if (this.hash !== "") {
-                event.preventDefault();
-                var hash = this.hash;
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function () {
-                    window.location.hash = hash;
-                });
-            }
-        });
-    });
-</script>
+     
+
+    <!-- javaScripts
+    ================================================== -->
+    <script src="js/uikit.js"></script>
+    <script src="js/simplebar.js"></script>
+    
+
 
 </body>
+
 </html>
