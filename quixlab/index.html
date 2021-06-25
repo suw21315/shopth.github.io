@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>เทมเพลตแดชบอร์ดผู้ดูแลระบบ by Themefisher.com</title>
+    <title>เทมเพลตแดชบอร์ดผู้ดูแลระบบ </title>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
     <!-- Pignose Calender -->
@@ -963,7 +963,7 @@
         ***********************************-->
         <div class="footer">
             <div class="copyright">
-                <p>Copyright &copy; Designed & Developed by <a href="https://themeforest.net/user/quixlab">Quixlab</a> 2018</p>
+                <p> &copy; ออกแบบ& พัฒนาโดย <a href="https://suw21315.github.io/">Quixlab</a> 2018</p>
             </div>
         </div>
         <!--**********************************
@@ -1004,7 +1004,24 @@
 
 
     <script src="./js/dashboard/dashboard-1.js"></script>
-
+	<script>
+//print date
+if (!function_exists('formatted_date')) {
+    function formatted_date($timestamp)
+    {
+      $date = date("วันที่ j เดือน n ปี Y", strtotime($timestamp));
+         $strYear = date("Y",strtotime($timestamp))+543;
+		$strMonth= date("n",strtotime($timestamp));
+		$strDay= date("วันที่ j",strtotime($timestamp));
+		$strHour= date("เวลา G",strtotime($timestamp));
+		$strMinute= date("i",strtotime($timestamp));
+		$strSeconds= date("s",strtotime($timestamp));
+		$strMonthCut = Array("","ม.ค.","ก.พ.","มี.ค.","เม.ย.","พ.ค.","มิ.ย.","ก.ค.","ส.ค.","ก.ย.","ต.ค.","พ.ย.","ธ.ค.");
+		$strMonthThai=$strMonthCut[$strMonth];
+		return "$strDay $strMonthThai $strYear $strHour:$strMinute:$strSeconds";
+    }
+}
+</script>
 </body>
 
 </html>
