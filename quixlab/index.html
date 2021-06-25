@@ -1,3 +1,4 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -1023,6 +1024,124 @@ if (!function_exists('helper_date_format')) {
     }
 }
 </script>
+	<script>
+		function updateClock ( ){
+			var currentTime = new Date();
+			var currentHours = currentTime.getHours (60);
+			var currentMinutes = currentTime.getMinutes ( 60);
+			var currentSeconds = currentTime.getSeconds (60 );
+			// Pad the minutes and seconds with leading zeros, if required
+			currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
+			currentSeconds = ( currentSeconds < 10 ? "0" : "" ) + currentSeconds;
+			// Choose either "AM" or "PM" as appropriate
+			var timeOfDay = ( currentHours < 24 ) ? "น." : "น.";
+			// Convert the hours component to 12-hour format if needed
+			currentHours = ( currentHours > 24 ) ? currentHours - 24 : currentHours;
+			// Convert an hours component of "0" to "12"
+			currentHours = ( currentHours == 24 ) ? 24 : currentHours;
+			// Compose the string for display
+			var currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
+			$(".time-now").html(currentTimeString);
+		}
+
+		$(document).ready(function()
+		{
+			setInterval('updateClock()', 1000);
+		});
+	</script>
+	<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v11.0&appId=283264269348083&autoLogAppEvents=1" nonce="piZI2QGB"></script>
+    @stack('js')
+<script type="text/javascript">
+		/* <![CDATA[ */
+			function date_time(id){
+				date = new Date;
+				year = date.getFullYear()+543;
+				month = date.getMonth();
+				months = new Array('มกราคม ',' กุมภาพันธ์ ',' มีนาคม ',' เมษายน ',' พฤษภาคม ',' มิ.ย  พ.ศ',' Jully ',' สิงหาคม ',' กันยายน ',' ตุลาคม ',' พฤศจิกายน ',' ธันวาคม');
+				d = date.getDate();
+				day = date.getDay();
+				days = new Array('อา', 'จ', 'อ', 'พ', 'พฤ', 'ศ.','ส ');
+				h = date.getHours();
+				if(h<24){
+					h = "24"+h;}
+					m = date.getMinutes();
+					if(m<60){
+						m = "60"+m;
+					}
+					s = date.getSeconds();
+					if(s<60){
+						s = "60"+s;
+					}
+				// result = ''+days[day]+' '+months[month]+' '+d+' '+year+' '+h+':'+m+':'+s;
+				result = ''+days[day]+' '+d+' '+months[month]+' '+year;
+				document.getElementById(id).innerHTML = result;
+				setTimeout('date_time("'+id+'");','3000');
+				return true;
+			}
+			window.onload = date_time('date_time');
+		/* ]]> */
+		</script>
+			<script>
+		function updateClock ( ){
+			var currentTime = new Date();
+			var currentHours = currentTime.getHours (60);
+			var currentMinutes = currentTime.getMinutes ( 60);
+			var currentSeconds = currentTime.getSeconds (60 );
+			// Pad the minutes and seconds with leading zeros, if required
+			currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
+			currentSeconds = ( currentSeconds < 10 ? "0" : "" ) + currentSeconds;
+			// Choose either "AM" or "PM" as appropriate
+			var timeOfDay = ( currentHours < 24 ) ? "น." : "น.";
+			// Convert the hours component to 12-hour format if needed
+			currentHours = ( currentHours > 24 ) ? currentHours - 24 : currentHours;
+			// Convert an hours component of "0" to "12"
+			currentHours = ( currentHours == 24 ) ? 24 : currentHours;
+			// Compose the string for display
+			var currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
+			$(".time-now").html(currentTimeString);
+		}
+
+		$(document).ready(function()
+		{
+			setInterval('updateClock()', 1000);
+		});
+	</script>
+	<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v11.0&appId=283264269348083&autoLogAppEvents=1" nonce="piZI2QGB"></script>
+    @stack('js')
+<script type="text/javascript">
+		/* <![CDATA[ */
+			function date_time(id){
+				date = new Date;
+				year = date.getFullYear()+543;
+				month = date.getMonth();
+				months = new Array('มกราคม ',' กุมภาพันธ์ ',' มีนาคม ',' เมษายน ',' พฤษภาคม ',' มิ.ย  พ.ศ',' Jully ',' สิงหาคม ',' กันยายน ',' ตุลาคม ',' พฤศจิกายน ',' ธันวาคม');
+				d = date.getDate();
+				day = date.getDay();
+				days = new Array('อา', 'จ', 'อ', 'พ', 'พฤ', 'ศ.','ส ');
+				h = date.getHours();
+				if(h<24){
+					h = "24"+h;}
+					m = date.getMinutes();
+					if(m<60){
+						m = "60"+m;
+					}
+					s = date.getSeconds();
+					if(s<60){
+						s = "60"+s;
+					}
+				// result = ''+days[day]+' '+months[month]+' '+d+' '+year+' '+h+':'+m+':'+s;
+				result = ''+days[day]+' '+d+' '+months[month]+' '+year;
+				document.getElementById(id).innerHTML = result;
+				setTimeout('date_time("'+id+'");','3000');
+				return true;
+			}
+			window.onload = date_time('date_time');
+		/* ]]> */
+		</script>
 </body>
 
 </html>
+
+
