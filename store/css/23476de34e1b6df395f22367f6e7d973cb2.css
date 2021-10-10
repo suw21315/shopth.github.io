@@ -1,7 +1,0 @@
-.visible-small-laptop{display:none !important}.hidden-small-laptop{display:inherit !important}.visible-phone{display:none !important}.visible-tablet{display:none !important}.hidden-desktop{display:none !important}.visible-desktop{display:inherit !important}@media (min-width: 769px) and (max-width: 1024px){.visible-small-laptop{display:inherit !important}.hidden-small-laptop{display:none !important}}@media (min-width: 481px) and (max-width: 768px){.hidden-desktop{display:inherit !important}.visible-desktop{display:none !important}.visible-tablet{display:inherit !important}.hidden-tablet{display:none !important}}@media (max-width: 480px){.hidden-desktop{display:inherit !important}.visible-desktop{display:none !important}.visible-phone{display:inherit !important}.hidden-phone{display:none !important}}@media screen and (max-width: 320px){}@media screen and (max-width: 480px){.columns>h3>small{display:block}}@media screen and (max-width: 768px){#ft .blog, #ft h5, #ft .social p, #ft2
-li.sep{display:none}#ft2
-li{display:block;font-size:14px;font-size:0.875rem;padding:0pt;margin:22px
-0pt}.order-1-responsive{order:1}.order-0-responsive{order:0}}@media screen and (max-width: 960px){}@media screen and (max-width: 1024px){}@media screen and (max-width: 1200px){}@media screen and (max-width: 1300px){#ft .post
-.poster{display:none}#ft .hshort, #ft
-.vshort{width:100%}}@media (max-width:1090px){#ft2
-li{padding:0pt 10px}}
