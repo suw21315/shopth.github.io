@@ -1,16 +1,10 @@
-/*=============== 
-***General Styling 
-===============*/
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
-body {
-font-family: 'Pridi', serif;
-  }
-  
 html{
     scroll-behavior: smooth;
 }
@@ -40,7 +34,7 @@ section{
     margin: auto;
 }
 .about, .services, .skills, .teams, .contact, footer{
-    font-family: 'Poppins', sans-serif;
+  font-family: 'Pridi', serif;
 }
 .about .about-content, 
 .services .serv-content,
@@ -58,7 +52,7 @@ section .title{
     font-weight: 500;
     margin-bottom: 60px;
     padding-bottom: 20px;
-    font-family: 'Ubuntu', sans-serif;
+ font-family: 'Pridi', serif;
 }
 section .title::before{
     content: "";
@@ -87,7 +81,7 @@ section .title::after{
     width: 100%;
     z-index: 999;
     padding: 30px 0;
-    font-family: 'Ubuntu', sans-serif;
+   font-family: 'Pridi', serif;
     transition: all 0.3s ease;
 }
 .navbar.sticky{
@@ -505,7 +499,7 @@ section .title::after{
     outline: none;
     padding: 0 15px;
     font-size: 17px;
-    font-family: 'Poppins', sans-serif;
+font-family: 'Pridi', serif;
     transition: all 0.3s ease;
 }
 .contact .right form .field input:focus,
